@@ -553,6 +553,17 @@
     <string name="app_perf_profiles_summary">Automatically choose an appropriate performance profile for applications and usage patterns</string>
     <string name="auto_power_save_never">Never</string>
 
+    <!-- Applications: Expanded desktop -->
+    <string name="expanded_desktop_settings_title">Expanded desktop</string>
+    <string name="expanded_desktop_settings_summary">Expand your available desktop space by hiding the status bar, navigation bar, or both</string>
+    <string name="expanded_desktop_options_title">Customization options</string>
+    <string name="expanded_desktop_style_title">Expanded desktop style</string>
+    <string name="expanded_desktop_style_hide_nothing">Hide nothing</string>
+    <string name="expanded_desktop_style_hide_status">Hide status bar</string>
+    <string name="expanded_desktop_style_hide_navigation">Hide navigation bar</string>
+    <string name="expanded_desktop_style_hide_both">Hide both</string>
+    <string name="expanded_desktop_nothing_to_show_text">Turn the switch off to customize your expanded desktop on a per-app basis</string>
+
     <!-- Statusbar clock font style -->
     <string name="clock_font_style_title">Font</string>
     <string name="clock_font_normal">Normal</string>
@@ -601,5 +612,4 @@
     <string name="clock_font_size_21">21</string>
     <string name="clock_font_size_22">22</string>
     <string name="clock_font_size_23">23</string>
-
 </resources>
