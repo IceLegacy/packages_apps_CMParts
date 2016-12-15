@@ -17,53 +17,531 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Generic stuff used everywhere -->
+    <string name="loading">Cargando\u2026</string>
+    <string name="dlg_ok">OK</string>
+    <string name="cancel">Cancelar</string>
+    <string name="add">Añadir</string>
+    <string name="choose_app">Elegir ap</string>
+    <string name="reset">Restablecer</string>
+    <string name="advanced">Avanzado</string>
+    <string name="settings">Ajustes</string>
+    <string name="name">Nombre</string>
+    <string name="back">Atrás</string>
+    <string name="finish">Finalizar</string>
+    <string name="next">Siguiente</string>
+    <string name="on">Activado</string>
+    <string name="off">Desactivado</string>
+    <string name="yes">Si</string>
+    <string name="no">No</string>
+    <string name="search">Buscar</string>
+    <string name="disabled">Deshabilitado</string>
+    <string name="enabled">Habilitado</string>
+
   <!-- Privacy Settings Header item -->
+    <string name="privacy_settings_title">Privacidad</string>
+
   <!-- Privacy Guard -->
+    <string name="privacy_guard_switch_label">Habilitar gestor de privacidad</string>
+    <string name="privacy_guard_dlg_title">Habilitar gestor de privacidad?</string>
+    <string name="privacy_guard_dlg_text">Al habilitar el gestor de privacidad la aplicación no podrá acceder a los datos personales como contactos, mensajes e historial de llamadas.</string>
+    <string name="privacy_guard_dlg_system_app_text">Al habilitar el gestor de privacidad para una aplicación de sistema, ésta no pordrá acceder ni proveer datos personales. Esto puede causar comportamientos anómalos.</string>
+    <string name="privacy_guard_default_title">Habilitado por defecto</string>
+    <string name="privacy_guard_default_summary_on">Gestor de privacidad habilitado</string>
+    <string name="privacy_guard_default_summary">Habilitar de forma predeterminada al instalar nuevas aplicaciones</string>
+    <string name="privacy_guard_manager_summary">Gestionar qué aplicaciones tienen acceso a los datos personales</string>
+    <string name="privacy_guard_no_user_apps">No hay aplicaciones instaladas</string>
+    <string name="privacy_guard_help_title">Ayuda</string>
+    <string name="privacy_guard_reset_title">Restablecer</string>
+    <string name="privacy_guard_reset_text">¿Restablecer permisos?</string>
+    <string name="privacy_guard_help_text">En esta pantalla puede seleccionar para qué aplicaciones estará activo el gestor de privacidad simplemente tocando sobre ellas. Las aplicaciones seleccionadas no podrán acceder a los datos personales como contactos, mensajes o historial de llamadas. Long pressing an app\'s entry opens its app details screen.\n\nBuilt-in apps are not shown by default but can be revealed by selecting the respective menu option.</string>
+    <string name="privacy_guard_manager_show_system_apps">Mostrar aplicaciones de sistema</string>
+    <string name="privacy_guard_advanced_settings_title">Avanzado</string>
+    <string name="privacy_guard_notification_title">Mostrar notificación</string>
+
   <!-- Notification light dialogs -->
+    <string name="edit_light_settings">Editar configuración del led</string>
+    <string name="pulse_speed_title">Velocidad y duración</string>
+    <string name="default_time">Normal</string>
+    <string name="custom_time">Personalizada</string>
+    <string name="dialog_delete_title">Borrar</string>
+    <string name="dialog_delete_message">¿Borrar el item seleccionado?</string>
+    <string name="brightness">Nivel de brillo</string>
+
   <!-- Values for the notification light pulse spinners -->
+    <string name="pulse_length_always_on">Siempre encendido</string>
+    <string name="pulse_length_very_short">Muy corto</string>
+    <string name="pulse_length_short">Corto</string>
+    <string name="pulse_length_normal">Normal</string>
+    <string name="pulse_length_long">Largo</string>
+    <string name="pulse_length_very_long">Muy largo</string>
+    <string name="pulse_speed_very_fast">Muy rápido</string>
+    <string name="pulse_speed_fast">Rápido</string>
+    <string name="pulse_speed_normal">Normal</string>
+    <string name="pulse_speed_slow">Lento</string>
+    <string name="pulse_speed_very_slow">Muy lento</string>
+
   <!-- Battery light settings -->
+    <string name="battery_light_title">Led de batería</string>
+    <string name="battery_low_pulse_title">Parpadear con batería baja</string>
+    <string name="battery_light_list_title">Colores</string>
+    <string name="battery_light_low_color_title">Batería baja</string>
+    <string name="battery_light_medium_color_title">Cargando</string>
+    <string name="battery_light_full_color_title">Cargado (90%)</string>
+    <string name="battery_light_really_full_color_title">Cargado (100%)</string>
+
   <!-- Lights settings screen, notification light settings -->
+    <string name="notification_light_title">Led de notificaciones</string>
+    <string name="notification_light_general_title">General</string>
+    <string name="notification_light_advanced_title">Avanzado</string>
+    <string name="notification_light_applist_title">Aplicaciones</string>
+    <string name="notification_light_phonelist_title">Teléfono</string>
+    <string name="notification_light_use_custom">Usar valores personalizados</string>
+    <string name="notification_light_default_value">Predeterminado</string>
+    <string name="notification_light_missed_call_title">Llamada perdida</string>
+    <string name="notification_light_voicemail_title">Buzón de voz</string>
+    <string name="notification_light_screen_on">Led con pantalla encendida</string>
+    <string name="notification_light_zen_mode">Led en modo no molestar</string>
+    <string name="notification_light_use_multiple_leds">Leds múltiples</string>
+    <string name="keywords_lights_brightness_level">intensidad del brilo del led</string>
+    <string name="notification_light_automagic">Elegir colores de forma aleatoria</string>
+    <string name="notification_light_automagic_summary">Eligiendo colores de forma aleatoria</string>
+
   <!-- Lights settings, LED notification -->
+    <string name="led_notification_title">Configuración del LED</string>
+    <string name="led_notification_text">LED habilitado por configuración</string>
+    <string name="notification_light_no_apps_summary">Para añadir el control por aplicación, activar \'%1$s\' y presionar \'\u002b\' en la barra de menú</string>
+
   <!-- LiveDisplay -->
+    <string name="live_display_summary">Optimizar la pantalla según la hora del día y las condiciones ambientales para mejorar la lectura y reducir el estrés visual</string>
+    <string name="live_display_mode">Modo de pantalla</string>
+    <string name="live_display_color_temperature_title">Temperatura del color</string>
+    <string name="live_display_color_temperature_summary">Día: <xliff:g id="day_temperature">%1$d</xliff:g>K  Noche: <xliff:g id="night_temperature">%2$d</xliff:g>K</string>
+    <string name="live_display_color_temperature_label"><xliff:g id="degrees">%1$d</xliff:g>K</string>
+    <string name="live_display_day">Día</string>
+    <string name="live_display_night">Noche</string>
+    <string name="live_display_outdoor_mode_title">Modo exterior automático</string>
+    <string name="live_display_outdoor_mode_summary">Aumenta el brillo y la saturación de forma automática bajo la luz del sol</string>
+    <string name="live_display_low_power_title">Reducción de consumo de energía</string>
+    <string name="live_display_low_power_summary">Ajustar la pantalla para que consuma menos energía sin pérdidas en la visualización</string>
+    <string name="live_display_enhance_color_title">Mejorar colores</string>
+    <string name="live_display_enhance_color_summary">Mejora las propiedades de los colores</string>
+    <string name="live_display_color_profile_title">Perfil de colores</string>
+    <string name="live_display_color_profile_standard_title">Estándar</string>
+    <string name="live_display_color_profile_standard_summary">Colores y blancos brillantes más precisos</string>
+    <string name="live_display_color_profile_natural_title">Natural</string>
+    <string name="live_display_color_profile_natural_summary">Colores realistas</string>
+    <string name="live_display_color_profile_dynamic_title">Dinámico</string>
+    <string name="live_display_color_profile_dynamic_summary">Colores y blancos brillantes mejorados</string>
+    <string name="live_display_color_profile_cinema_title">Cine</string>
+    <string name="live_display_color_profile_cinema_summary">Colores perfectos para reproducción de vídeo</string>
+    <string name="live_display_color_profile_astronomy_title">Astronomía</string>
+    <string name="live_display_color_profile_astronomy_summary">Rojo profundo para preservar la visión nocturna</string>
+    <string name="live_display_color_profile_photography_title">Fotografía</string>
+    <string name="live_display_color_profile_photography_summary">Colores perfectos para reproducción de fotos</string>
+    <string name="live_display_color_profile_basic_title">Básico</string>
+    <string name="live_display_color_profile_basic_summary">Usa la pantalla sin calibrar</string>
+    <string name="live_display_color_profile_adaptive_title">Adaptativo</string>
+    <string name="live_display_color_profile_adaptive_summary">Los colores se adaptan a las condiciones ambientales</string>
+    <string name="color_calibration_title">Calibración de color</string>
+    <string name="color_calibration_summary">Calibrar los colores en pantalla</string>
+    <string name="color_red_title">Rojo</string>
+    <string name="color_green_title">Verde</string>
+    <string name="color_blue_title">Azul</string>
+
   <!-- LiveDisplay : Picture Adjustment -->
+    <string name="picture_adjustment_title">Ajustes de imágenes</string>
+    <string name="picture_adjustment_summary">Ajustar matiz, saturación, intensidad y contraste</string>
+    <string name="adj_hue_title">Matiz</string>
+    <string name="adj_saturation_title">Saturación</string>
+    <string name="adj_intensity_title">Intensidad</string>
+    <string name="adj_contrast_title">Contraste</string>
+
   <!-- Button settings -->
+    <string name="button_pref_title">Botones</string>
+    <string name="hardware_keys_power_key_title">Botón de encendido</string>
+    <string name="hardware_keys_home_key_title">Botón inicio</string>
+    <string name="hardware_keys_back_key_title">Botón atrás</string>
+    <string name="hardware_keys_menu_key_title">Botón menú</string>
+    <string name="hardware_keys_assist_key_title">Botón buscar</string>
+    <string name="hardware_keys_appswitch_key_title">Botón aps. recientes</string>
+    <string name="hardware_keys_camera_key_title">Botón de cámara</string>
+    <string name="hardware_keys_volume_keys_title">Botones de volumen</string>
+    <string name="hardware_keys_short_press_title">Acción de pulsación corta</string>
+    <string name="hardware_keys_long_press_title">Acción de pulsación larga</string>
+    <string name="hardware_keys_double_tap_title">Acción de doble pulsación</string>
+    <string name="hardware_keys_action_nothing">Sin acción</string>
+    <string name="hardware_keys_action_menu">Abrir/cerrar menú</string>
+    <string name="hardware_keys_action_app_switch">Gestor de aplicaciones recientes</string>
+    <string name="hardware_keys_action_search">Asistente de búsquedas</string>
+    <string name="hardware_keys_action_voice_search">Búsqueda por voz</string>
+    <string name="hardware_keys_action_in_app_search">Búsqueda en aplicaciones</string>
+    <string name="hardware_keys_action_launch_camera">Lanzar cámara</string>
+    <string name="hardware_keys_action_sleep">Apagar pantalla</string>
+    <string name="hardware_keys_action_last_app">Última aplicación</string>
+    <string name="hardware_keys_action_split_screen">Dividir pantalla</string>
+    <string name="camera_sleep_on_release_title">Vistazo de pantalla</string>
+    <string name="camera_sleep_on_release_summary">Media pulsación mantendrá la pantalla encendida sólo mientras el botón se está presionando</string>
+    <string name="camera_launch_title">Abrir cámara</string>
+    <string name="camera_launch_summary">Una pulsación larga abrirá la cámara al soltar</string>
+    <string name="volbtn_music_controls_title">Control multimedia</string>
+    <string name="volbtn_music_controls_summary">Cambia entre pistas de audio presionando de forma prolongada los botones de volumen cuando la pantalla está apagada</string>
+    <string name="volbtn_cursor_control_title">Controles del cursor del teclado</string>
+    <string name="volbtn_cursor_control_off">Deshabilitados</string>
+    <string name="volbtn_cursor_control_on">Volumen arriba/abajo mueven el cursor a la izquierda/derecha</string>
+    <string name="volbtn_cursor_control_on_reverse">Volumen arriba/abajo mueven el cursor a la derecha/izquierda</string>
+    <string name="power_end_call_title">Finalizar llamada</string>
+    <string name="power_end_call_summary">Finalizar la llamada en curso presionando el botón de encendido</string>
+    <string name="swap_volume_buttons_title">Reorientar</string>
+    <string name="swap_volume_buttons_summary">Intercambiar los botones de volumen al rotar la pantalla</string>
+    <string name="button_wake_title">Despetar dispositivo</string>
+    <string name="volume_answer_call_title">Responder llamada</string>
+    <string name="volume_answer_call_summary">Responder a las llamadas entrantes presionando los botones de volumen</string>
+    <string name="home_answer_call_title">Responder llamada</string>
+    <string name="home_answer_call_summary">Responder a las llamadas entrantes presionando el botón inicio</string>
+
   <!-- Key backlight -->
+    <string name="button_backlight_title">Retroiluminación</string>
+    <string name="button_backlight_enabled">Iluminar botones</string>
+    <string name="keyboard_backlight_enabled">Iluminar teclado</string>
+    <string name="button_backlight_seekbar_title">Brillo de los botones</string>
+    <string name="keyboard_backlight_seekbar_title">Brillo del teclado</string>
+    <string name="backlight_timeout_title">Tiempo de retroiluminación</string>
+    <string name="backlight_timeout_unlimited">No apagar</string>
+    <string name="backlight_summary_disabled">Deshabilitada</string>
+    <string name="backlight_summary_enabled_with_timeout">Habilitada durante <xliff:g id="timeout">%s</xliff:g></string>
+    <string name="backlight_summary_enabled">Habilitada</string>
+
   <!-- Buttons - Enable navbar -->
+    <string name="disable_navkeys_title">Habilitar barra de navegación en pantalla</string>
+    <string name="disable_navkeys_summary">Habilita la barra de navegación en pantalla y deshabilita los botones físicos</string>
+
   <!-- Navigation Bar -->
+    <string name="navigation_bar_category">Barra de navegación</string>
+    <string name="navigation_bar_title">Diseño y botones</string>
+    <string name="navigation_bar_left_title">Modo zurdo</string>
+    <string name="navigation_bar_left_summary">Posiciona la barra de navegación en el lado izquierdo de la pantalla en modo horizontal</string>
+    <string name="navigation_bar_arrow_keys_title">Botones desplazamiento cursor mientras se escribe</string>
+    <string name="navigation_bar_arrow_keys_summary">Muestra botones de izquierda y derecha para desplazar el cursor mientras se escribe. Se solapa con el selector IME.</string>
+    <string name="navigation_bar_recents_title">Acción de pulsación prolongada en botón recientes</string>
+
   <!-- Power menu -->
+    <string name="power_menu_title">Menú de apagado</string>
+    <string name="power_menu_reboot_title">Menú de reinicio</string>
+    <string name="power_menu_screenshot_title">Captura de pantalla</string>
+    <string name="power_menu_screenrecord_title">Grabar pantalla</string>
+    <string name="power_menu_airplane_title">Modo avión</string>
+    <string name="power_menu_users_title">Cambiar de usuario</string>
+    <string name="power_menu_settings_title">Ajustes</string>
+    <string name="power_menu_lockdown_title">Bloquear dispositivo</string>
+    <string name="power_menu_bug_report_title">Enviar debug</string>
+    <string name="power_menu_sound_title">Panel de sonido</string>
+    <string name="power_menu_bug_report_disabled">El envío de debug está deshabilitado en las opciones de desarrollo</string>
+
+    <string name="volume_keys_control_ring_stream_title">Control de volumen de llamada</string>
+    <string name="volume_keys_control_ring_stream_summary_on">Los botones de volumen controlan el volumen del tono de llamada</string>
+    <string name="volume_keys_control_ring_stream_summary_off">Los botones de volumen controlan el volumen multimedia</string>
+
+    <string name="camera_double_tap_power_gesture_title">Presionar dos veces el botón de encendido para abrir la cámara</string>
+
   <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
+    <string name="camera_double_tap_power_gesture_desc">Abrir la cámara sin desbloquear la pantalla</string>
+
   <!-- Profiles -->
+    <string name="profile_menu_delete_title">Borrar</string>
+    <string name="profile_action_none">No cambiar</string>
+    <string name="profile_action_system">Predeterminados del sistema</string>
+    <string name="profile_action_disable">Desactivaar</string>
+    <string name="profile_action_enable">Activar</string>
+
+    <string name="profile_trigger_a2dp_connect">Al conectar A2DP</string>
+    <string name="profile_trigger_a2dp_disconnect">Al desconectar A2DP</string>
+
+    <string name="profile_tabs_wifi">Wi\u2011Fi</string>
+    <string name="profile_tabs_bluetooth">Bluetooth</string>
+    <string name="profile_tabs_nfc">NFC</string>
+
+    <string name="profile_triggers_header">Disparadores que activarán este perfil</string>
+
+    <string name="profile_setup_setup_triggers_title">Paso 1: Añadir disparador</string>
+    <string name="profile_setup_setup_triggers_title_config">Modificar disparadores: <xliff:g id="profile_name">%1$s</xliff:g></string>
+
+    <string name="profile_setup_actions_title">Paso 2: Configurar acciones</string>
+    <string name="profile_setup_actions_title_config">Reconfigurar acciones</string>
+
+    <string name="wireless_networks_settings_title">Inalámbrico &amp; redes</string>
+
   <!-- Profile triggers -->
+    <string name="no_bluetooth_triggers">No hay dispositivos bluetooth vinculados.\nTocar para emparejar un dispositivo bluetooth y configurar los disparadores.</string>
+    <string name="no_wifi_triggers">No hay puntos de acceso Wi\u2011Fi configurados.\nTocar para conectar a una Wi\u2011Fi y configurar los disparadores.</string>
+    <string name="no_triggers_configured">No hay disparadores configurados. Toca para crearlos.</string>
+    <string name="no_triggers_configured_nfc">Tocar para crear un disparador NFC.</string>
+    <string name="profile_setup_setup_triggers_description">Por favor elegir disparadores que activarán este perfil</string>
+    <string name="profile_setup_actions_description">Ahora configurar que hacer cuando se active este perfil</string>
+
   <!-- Profiles settings  -->
+    <string name="profiles_settings_title">Perfiles de sistema</string>
+    <string name="profiles_add">añadir</string>
+    <string name="profile_menu_delete">Borrar</string>
+    <string name="profile_settings_title">Perfil</string>
+    <string name="profile_empty_list_profiles_off">Habilites los perfiles para poder configurarlos y usarlos.</string>
+    <string name="profile_settings_summary_off">Los perfiles están deshabilitados</string>
+    <string name="profile_trigger_configure">Configurar disparador</string>
+    <string name="profile_write_nfc_tag">Escribir a una etiqueta NFC</string>
+    <string name="profile_write_touch_tag">Tocar la etiqueta para grabar</string>
+    <string name="profile_write_success">Etiqueta grabada correctamente</string>
+    <string name="profile_write_failed">Fallo al grabar la etiqueta!</string>
+    <string name="profile_selected">Perfil seleccionado: %1$s</string>
+    <string name="profile_nfc_text">Grabar un perfil en una etiqueta NFC permite seleccionar el perfil al acercar el dispositvo. Acercándolo de nuevo cambiará al perfil seleccionado anteriormente.</string>
+    <string name="profile_unknown_nfc_tag">Perfil desconocido</string>
+    <string name="profile_add_nfc_text">Esta etiqueta NFC está asociada a un perfil desconocido. Asociando esta etiqueta NFC a un perfil existente permitirá seleccionarlo de aquí en adelante.</string>
+    <string name="profile_select">Elegir perfil</string>
+    <string name="profile_remove_dialog_message">¿Borrar perfil %1$s?</string>
+    <string name="profile_populate_profile_from_state">¿Configurar perfil usando los ajustes actuales del dispositivo?</string>
+    <string name="profile_menu_fill_from_state">Importar ajustes actuales del dispositivo</string>
+    <string name="profile_remove_current_profile">No se pudo borrar el perfil actual!</string>
+    <string name="profile_app_group_category_title">Anulaciones de notificaciones</string>
+    <string name="profile_app_group_item_instructions">Crear o borrar grupos</string>
+    <string name="profile_app_group_item_instructions_summary">Crea o elimina grupos de apps para gestionar notificaciones a este perfil</string>
+
   <!-- Profile mode options. -->
+    <string name="profile_entries_on">Activado</string>
+    <string name="profile_entries_off">Desactivado</string>
+    <string name="profile_entries_no_override">Sin gestión</string>
+
   <!-- Add Profile -->
+    <string name="profile_name_title">Nombre</string>
+    <string name="new_profile_name">&lt;nuevo perfil&gt;</string>
+
   <!-- Rename Dialog  -->
+    <string name="rename_dialog_title">Renombrar</string>
+    <string name="rename_dialog_message">Escribir un nuevo nombre</string>
+    <string name="rename_dialog_hint">Escribir nombre del perfil</string>
+
   <!-- Reset Profiles -->
+    <string name="profile_reset_title">Restablecer</string>
+    <string name="profile_reset_message">Elimina todos los perfiles y grupos de aplicaciones creados por el usuario y restablece los predeterminados?</string>
+
   <!-- Delete confimation messages -->
+    <string name="profile_app_delete_confirm">Eliminar esta aplicación?</string>
+
   <!-- Profile network mode -->
+    <string name="profile_networkmode_2g">2G</string>
+    <string name="profile_networkmode_3g">3G</string>
+    <string name="profile_networkmode_4g">LTE</string>
+    <string name="profile_networkmode_2g3g">2G/3G</string>
+    <string name="profile_networkmode_2g3g4g">2G/3G/LTE</string>
+
   <!-- Profile Config screen PreferenceGroup titles -->
+    <string name="profile_volumeoverrides_title">Reconfiguración de volumen</string>
+    <string name="connection_state_enabled">Habilitar</string>
+    <string name="volume_override_summary">Establer a  %1$s/%2$s</string>
+    <string name="profile_volume_override_checkbox_label">Reconfigurar volumen</string>
+
   <!-- Menu item for managing profiles -->
+    <string name="profile_profiles_manage">Perfil</string>
+    <string name="profile_profile_manage">Configurar perfil</string>
+    <string name="profile_appgroups_manage">Grupos de aplicaciones</string>
+    <string name="profile_appgroup_manage">Configurar grupo de aplicaciones</string>
+
   <!-- Profile settings screen, section header for settings related to notification profiles -->
+    <string name="profile_settings">Ajustes del perfil</string>
+    <string name="profile_trigger_connect">Al conectar</string>
+    <string name="profile_trigger_disconnect">Al desconectar</string>
+    <string name="profile_trigger_notrigger">Sin disparador</string>
+
   <!-- Profile Settings sound modes labels -->
+    <string name="sound_mode">Modo de notificaciones</string>
+    <string name="ringer_mode">Modo Ring</string>
+    <string name="lights_mode">Modo Led</string>
+    <string name="vibrate_mode">Modo Vibración</string>
+    <string name="choose_soundtone">Elegir sonido de notificación</string>
+    <string name="choose_ringtone">Elegir tono de llamada</string>
+    <string name="ringtone_title">Tono del teléfono</string>
+    <string name="ringtone_summary">""</string>
+
   <!-- Sound settings screen, setting option name to pick ringtone (a list dialog comes up)-->
+    <string name="soundtone_title">Tono de notificación</string>
+
   <!-- Title for application group setting screen -->
+    <string name="profile_appgroups_title">Grupos de aplicaciones</string>
+    <string name="profile_applist_title">Aplicaciones</string>
+    <string name="profile_new_appgroup">Nuevo grupo de aplicaciones</string>
+    <string name="profile_delete_appgroup">¿Borrar este grupo de apliacaciones?</string>
+    <string name="profile_appgroup_name_prompt">Escribir un nombre para este grupo de aplicaciones</string>
+    <string name="profile_appgroup_name_title">Nombre</string>
+    <string name="duplicate_appgroup_name">Nombre de grupo duplicado!</string>
+
   <!-- Add application dialog box title -->
+    <string name="profile_choose_app">Elegir aplicación</string>
+
   <!-- Profiles - system settings -->
+    <string name="profile_system_settings_title">Ajustes de sistema</string>
+    <string name="profile_lockmode_title">Modo pantalla de bloqueo</string>
+    <string name="profile_lockmode_policy_disabled_summary">Este perfil está deshabilitado por una política del administrador del dispositivo</string>
+    <string name="profile_lockmode_insecure_summary">No solicitar PIN o contraseña</string>
+    <string name="profile_lockmode_disabled_summary">Deshabilitar pantalla de bloqueo</string>
+    <string name="profile_airplanemode_title">Modo avión</string>
+    <string name="profile_brightness_title">Brillo de la pantalla</string>
+
+    <string name="profile_brightness_override_summary">Establecer a %1$d%%</string>
+    <string name="profile_brightness_override_checkbox_label">Reconfigurar brillo</string>
+
   <!-- Connection override toggles (not all are used at this time ) -->
+    <string name="toggleWifi">Wi\u2011Fi</string>
+    <string name="toggleWifiAp">HotSpot Wi\u2011Fi compartido</string>
+    <string name="toggleBluetooth">Bluetooth</string>
+    <string name="toggleGPS">GPS</string>
+    <string name="toggleData">Conexión de datos</string>
+    <string name="toggleSync">Auto-sincronización de datos</string>
+    <string name="toggle2g3g4g">Tipo de red preferida</string>
+    <string name="toggle2g3g4g_msim">Tipo de red preferida (%1$s)</string>
+    <string name="toggleNfc">NFC</string>
+
   <!-- Sound settings screen -->
+    <string name="ring_mode_title">Modo de tono de llamada</string>
+    <string name="ring_mode_normal">Normal</string>
+    <string name="ring_mode_vibrate">Vibración</string>
+    <string name="ring_mode_mute">Silenciado</string>
+    <string name="ring_volume_title">Volumen del tono de llamada</string>
+    <string name="incoming_call_volume_title">Tono de llamada</string>
+    <string name="notification_volume_title">Notificación</string>
+    <string name="media_volume_title">Multimedia</string>
+    <string name="alarm_volume_title">Alarma</string>
+    <string name="doze_title">Pantalla ambiente</string>
+
   <!-- Status bar -->
+    <string name="status_bar_title">Barra de estado</string>
+    <string name="status_bar_toggle_brightness">Control de brillo</string>
+    <string name="status_bar_toggle_brightness_summary">Ajusta el brillo deslizando el dedo por la barra de estado</string>
+    <string name="status_bar_notif_count_title">Mostrar contador de notificaciones</string>
+    <string name="status_bar_notif_count_summary">Muestra el número de notificaciones pendientes</string>
+    <string name="status_bar_quick_qs_pulldown_title">Despliegue rápido</string>
+    <string name="status_bar_quick_qs_pulldown_summary">El lado %1$s de la barra de estado despliega los ajustes rápidos</string>
+    <string name="status_bar_quick_qs_pulldown_summary_left">Izquierdo</string>
+    <string name="status_bar_quick_qs_pulldown_summary_right">Derecho</string>
+    <string name="status_bar_quick_qs_pulldown_off">Deshabilitado</string>
+    <string name="status_bar_quick_qs_pulldown_left">Izquierda</string>
+    <string name="status_bar_quick_qs_pulldown_right">Derecha</string>
+
   <!-- Status bar - Clock -->
+    <string name="status_bar_clock_style_title">Estilo del reloj</string>
+    <string name="status_bar_clock_style_right">A la derecha</string>
+    <string name="status_bar_clock_style_left">A la izquierda</string>
+    <string name="status_bar_clock_style_center">Centrado</string>
+    <string name="status_bar_clock_style_hidden">Oculto</string>
+
+    <string name="status_bar_am_pm_title">Estilo AM/PM</string>
+    <string name="status_bar_am_pm_info">Reloj 24-horas habilitado</string>
+    <string name="status_bar_am_pm_normal">Normal</string>
+    <string name="status_bar_am_pm_small">Pequeño</string>
+    <string name="status_bar_am_pm_hidden">Oculto</string>
+
   <!-- Status bar - Battery -->
+    <string name="status_bar_battery_style_title">Estilo del estado de la batería</string>
+    <string name="status_bar_battery_style_icon_portrait">Icono vertical</string>
+    <string name="status_bar_battery_style_icon_landscape">Icono horizontal</string>
+    <string name="status_bar_battery_style_circle">Circular</string>
+    <string name="status_bar_battery_style_text">Texto</string>
+    <string name="status_bar_battery_style_hidden">Oculto</string>
+
   <!-- Status bar - Battery percentage -->
+    <string name="status_bar_battery_percentage_title">Porcentaje de batería</string>
+    <string name="status_bar_battery_percentage_default">Oculto</string>
+    <string name="status_bar_battery_percentage_text_inside">Dentro del icono</string>
+    <string name="status_bar_battery_percentage_text_next">Al lado del icono</string>
+
   <!-- Status bar - icon blacklist -->
+    <string name="status_bar_icons_title">Iconos de la barra de estado</string>
+    <string name="status_bar_icons_summary">Gestionar qué iconos se muestran en la barra de estado</string>
+
   <!-- Status bar - double tap to sleep -->
+    <string name="status_bar_double_tap_to_sleep_title">Doble-toque para apagar</string>
+    <string name="status_bar_double_tap_to_sleep_summary">Doble-toque en la barra de estado apaga la pantalla</string>
+
   <!-- Protected apps -->
+    <string name="protected_apps_manager_title">Aplicaciones protegidas</string>
+    <string name="protected_apps_manager_summary">Gestionar qué aplicaciones tienen un bloqueo de seguridad</string>
+
   <!-- Contributors cloud activity -->
+    <string name="contributors_cloud_fragment_title">Colaboradores</string>
+    <string name="contributors_cloud_loading_message">Cargando datos de colaboradores\u2026</string>
+    <string name="contributors_cloud_failed_message">No se pudieron cargar los datos de los colaboradores</string>
+    <string name="contributor_info_menu">Información del colaborador</string>
+    <string name="contributor_info_msg">
+        <![CDATA[<b>Name:</b> <xliff:g id="name">%1$s</xliff:g><br/><br/>
+                 <b>Nick:</b> <xliff:g id="nick">%2$s</xliff:g><br/><br/>
+                 <b>Commits:</b> <xliff:g id="commits">%3$s</xliff:g>]]></string>
+    <string name="contributions_info_menu">Información de las colaboraciones</string>
+    <string name="contributions_info_msg">
+        <![CDATA[<b>Total contributors:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
+                 <b>Total commits:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
+                 <b>Last update:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
+
   <!-- Anonymous Statistics #CM -->
   <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
+    <string name="anonymous_statistics_title">Estadísticas CyanogenMod</string>
+    <string name="anonymous_statistics_summary">Ayuda a mejorar CyanogenMod enviando estadísticas anónimas</string>
+    <string name="anonymous_statistics_warning_title">Acerca de</string>
+    <string name="anonymous_statistics_warning">Permitiendo las Estadísticas CyanogenMod se envían datos no personales a los desarroladores de CyanogenMod
+        para contabilizar las instalaciones en dispositivos. La información enviada incluye un identificador único que no compromete la privacidad de los datos personales.
+        Los datos se envían cada inicio del sistema.\n\nPara ver un ejemplo de la información enviada tocar en Previsualizar datos.</string>
+    <string name="enable_reporting_title">Habilitar envío de estadísticas</string>
+    <string name="preview_data_title">Previsualizar datos</string>
+    <string name="view_stats_title">Ver estadísticas</string>
+    <string name="anonymous_learn_more">Saber más</string>
+
   <!-- Anonymous Statistics - Preview -->
+    <string name="preview_id_title">ID único</string>
+    <string name="preview_device_title">Dispositivo</string>
+    <string name="preview_version_title">Versión</string>
+    <string name="preview_country_title">País</string>
+    <string name="preview_carrier_title">Operador</string>
+    <string name="stats_collection_title">Recolección de estadísticas</string>
+    <string name="stats_collection_summary">Cuando está habilitado permite la recolección de métricas</string>
+
   <!-- Display : Rotation  -->
+    <string name="accelerometer_title">Orientación automática de la pantalla</string>
+    <string name="display_rotation_title">Ajustes de orientación</string>
+    <string name="display_rotation_enabled">Orientación automática habilitada</string>
+    <string name="display_rotation_disabled">Orientación automática deshabilitada</string>
+    <string name="display_rotation_unit">grados</string>
+    <string name="display_lockscreen_rotation_title">Reorientar pantalla de bloqueo</string>
+    <string name="display_rotation_category_title">Modos de orientación</string>
+    <string name="display_rotation_0_title">0 grados</string>
+    <string name="display_rotation_90_title">90 grados</string>
+    <string name="display_rotation_180_title">180 grados</string>
+    <string name="display_rotation_270_title">270 grados</string>
+
   <!-- Weather -->
+    <string name="weather_settings_title">Clima</string>
+    <string name="weather_settings_no_services_prompt">No hay proveedores de clima instalados</string>
+    <string name="weather_settings_no_services_summary">Instalar un proveedor del clima para recibir actualizaciones</string>
+    <string name="weather_settings_button">Ajustes del proveedor</string>
+    <string name="weather_settings_activity_not_found">No ha sido posible abrir el menú de configuración de este proveedor</string>
+    <string name="weather_settings_add_weather_provider">Añadir proveedor de clima</string>
+    <string name="weather_settings_general_settings_title">General</string>
+    <string name="weather_settings_providers_title">Proveedores</string>
+    <string name="weather_settings_temp_units_title">Unidad de temperatura</string>
+    <string name="weather_settings_temp_celsius">Celsius</string>
+    <string name="weather_settings_temp_fahrenheit">Fahrenheit</string>
+    <string name="weather_settings_keyword">clima</string>
+    <string name="status_bar_show_weather_title">Mostrar clima</string>
+    <string name="status_bar_show_weather_summary">Muestra el clima actual en la barra de estado</string>
+
   <!-- Power: Performance profiles -->
-  <!-- Applications: Expanded desktop -->
+    <string name="perf_profile_settings_title">Optimizador de batería y rendimiento</string>
+    <string name="perf_profile_settings_summary">Ajusta las opciones de ahorro de energía y rendimiento del dispositivo</string>
+    <string name="perf_profile_overview_summary">Perfil actual: <xliff:g id="perf_profile_name">%1$s</xliff:g></string>
+    <string name="perf_profile_category_title">Rendimiento del dispositivo</string>
+    <string name="perf_profile_title">Perfil de alto rendimiento: <xliff:g id="perf_profile_name">%1$s</xliff:g></string>
+    <string name="perf_profile_fail_toast">Este perfil no está disponible</string>
+    <string name="power_save_category_title">Ahorro de batería</string>
+    <string name="power_save_title">Ahorro de batería extremo</string>
+    <string name="power_save_summary">Restringir el rendimiento del dispositivo y la actividad en segundo plano para ahorrar batería</string>
+    <string name="auto_power_save_title">Ahorro de batería automático</string>
+    <string name="auto_power_save_summary_on">Activa el modo ahorro de batería automáticamente Habilita el modo ahorro de energía cuando se llega al %d por ciento de batería</string>
+    <string name="auto_power_save_summary_off">No habilitar el modo de ahorro de energía automáticamente</string>
+    <string name="app_perf_profiles_title">Optimización automática</string>
+    <string name="app_perf_profiles_summary">Elegir un perfil de rendimiento apropiado automáticamente basándose en el uso de las aplicaciones y del sistema</string>
+
 </resources>
