@@ -544,4 +544,53 @@
     <string name="app_perf_profiles_title">Optimización automática</string>
     <string name="app_perf_profiles_summary">Elegir un perfil de rendimiento apropiado automáticamente basándose en el uso de las aplicaciones y del sistema</string>
 
+    <!-- Statusbar clock font style -->
+    <string name="clock_font_style_title">Fuente</string>
+    <string name="clock_font_normal">Normal</string>
+    <string name="clock_font_italic">Cursiva</string>
+    <string name="clock_font_bold">Negrita</string>
+    <string name="clock_font_bold_italic">Negrita cursiva</string>
+    <string name="clock_font_light">Suave</string>
+    <string name="clock_font_light_italic">Suave cursiva</string>
+    <string name="clock_font_thin">Fina</string>
+    <string name="clock_font_thin_italic">Fina cursiva</string>
+    <string name="clock_font_condensed">Condensada</string>
+    <string name="clock_font_condensed_italic">Condesada cursiva</string>
+    <string name="clock_font_condensed_light">Condensada suave</string>
+    <string name="clock_font_condensed_light_italic">Condensada suave cursiva</string>
+    <string name="clock_font_condensed_bold">Condensada negrita</string>
+    <string name="clock_font_condensed_bold_italic">Condensada negrita cursiva</string>
+    <string name="clock_font_medium">Mediana</string>
+    <string name="clock_font_medium_italic">Mediana cursiva</string>
+    <string name="clock_font_black">Negra</string>
+    <string name="clock_font_black_italic">Negra cursiva</string>
+    <string name="clock_font_dancingscript">DancingScript</string>
+    <string name="clock_font_dancingscript_bold">DancingScript negrita</string>
+    <string name="clock_font_comingsoon">ComingSoon</string>
+    <string name="clock_font_notoserif">NotoSerif Normal</string>
+    <string name="clock_font_notoserif_italic">NotoSerif Cursiva</string>
+    <string name="clock_font_notoserif_bold">NotoSerif Negrita</string>
+    <string name="clock_font_notoserif_bold_italic">NotoSerif negrita cursiva</string>
+    <string name="clock_font_size_title">Tamaño de fuente</string>
+    <string name="clock_font_size_4">4</string>
+    <string name="clock_font_size_5">5</string>
+    <string name="clock_font_size_6">6</string>
+    <string name="clock_font_size_7">7</string>
+    <string name="clock_font_size_8">8</string>
+    <string name="clock_font_size_9">9</string>
+    <string name="clock_font_size_10">10</string>
+    <string name="clock_font_size_11">11</string>
+    <string name="clock_font_size_12">12</string>
+    <string name="clock_font_size_13">13</string>
+    <string name="clock_font_size_14">14</string>
+    <string name="clock_font_size_15">15</string>
+    <string name="clock_font_size_16">16</string>
+    <string name="clock_font_size_17">17</string>
+    <string name="clock_font_size_18">18</string>
+    <string name="clock_font_size_19">19</string>
+    <string name="clock_font_size_20">20</string>
+    <string name="clock_font_size_21">21</string>
+    <string name="clock_font_size_22">22</string>
+    <string name="clock_font_size_23">23</string>
+
 </resources>
