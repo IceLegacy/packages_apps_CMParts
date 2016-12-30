@@ -492,4 +492,32 @@
   <string name="expanded_desktop_style_hide_navigation">Nascondi barra di navigazione</string>
   <string name="expanded_desktop_style_hide_both">Nascondi entrambe</string>
   <string name="expanded_desktop_nothing_to_show_text">Spegni l\'interruttore per personalizzare lo schermo esteso basato su ogni singola app</string>
+  <!-- Statusbar clock font style -->
+  <string name="clock_font_style_title">Carattere</string>
+  <string name="clock_font_normal">Normale</string>
+  <string name="clock_font_italic">Corsivo</string>
+  <string name="clock_font_bold">Grassetto</string>
+  <string name="clock_font_bold_italic">Corsivo Grassetto</string>
+  <string name="clock_font_light">Leggero</string>
+  <string name="clock_font_light_italic">Corsivo Leggero</string>
+  <string name="clock_font_thin">Sottile</string>
+  <string name="clock_font_thin_italic">Corsivo Sottile</string>
+  <string name="clock_font_condensed">Condensato</string>
+  <string name="clock_font_condensed_italic">Corsivo Condensato</string>
+  <string name="clock_font_condensed_light">Condensato Leggero</string>
+  <string name="clock_font_condensed_light_italic">Corsivo Condensato Leggero</string>
+  <string name="clock_font_condensed_bold">Condensato Grassetto</string>
+  <string name="clock_font_condensed_bold_italic">Corsivo Condensato Grassetto</string>
+  <string name="clock_font_medium">Medio</string>
+  <string name="clock_font_medium_italic">Corsivo Medio</string>
+  <string name="clock_font_black">Nero</string>
+  <string name="clock_font_black_italic">Corsivo Nero</string>
+  <string name="clock_font_dancingscript">DancingScript</string>
+  <string name="clock_font_dancingscript_bold">DancingScript Grassetto</string>
+  <string name="clock_font_comingsoon">ComingSoon</string>
+  <string name="clock_font_notoserif">NotoSerif Normale</string>
+  <string name="clock_font_notoserif_italic">NotoSerif Corsivo</string>
+  <string name="clock_font_notoserif_bold">NotoSerif Grassetto</string>
+  <string name="clock_font_notoserif_bold_italic">NotoSerif Grassetto Corsivo</string>
+  <string name="clock_font_size_title">Dimensione carattere</string>
 </resources>
