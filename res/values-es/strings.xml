@@ -539,7 +539,7 @@
     <string name="power_save_title">Ahorro de batería extremo</string>
     <string name="power_save_summary">Restringir el rendimiento del dispositivo y la actividad en segundo plano para ahorrar batería</string>
     <string name="auto_power_save_title">Ahorro de batería automático</string>
-    <string name="auto_power_save_summary_on">Activa el modo ahorro de batería automáticamente Habilita el modo ahorro de energía cuando se llega al %d por ciento de batería</string>
+    <string name="auto_power_save_summary_on">Activa el modo ahorro de batería automáticamente Habilita el modo ahorro de energía cuando se llega al %s por ciento de batería</string>
     <string name="auto_power_save_summary_off">No habilitar el modo de ahorro de energía automáticamente</string>
     <string name="app_perf_profiles_title">Optimización automática</string>
     <string name="app_perf_profiles_summary">Elegir un perfil de rendimiento apropiado automáticamente basándose en el uso de las aplicaciones y del sistema</string>
