@@ -23,4 +23,7 @@
 
     <string name="menu_save">Guardar</string>
     <string name="menu_cancel">Descartar</string>
+
+    <!-- Pa Battery -->
+    <string name="status_bar_battery_style_solid">Sólida</string>
 </resources>

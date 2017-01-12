@@ -544,6 +544,17 @@
     <string name="app_perf_profiles_title">Optimización automática</string>
     <string name="app_perf_profiles_summary">Elegir un perfil de rendimiento apropiado automáticamente basándose en el uso de las aplicaciones y del sistema</string>
 
+    <!-- Applications: Expanded desktop -->
+    <string name="expanded_desktop_settings_title">Escritorio expandido</string>
+    <string name="expanded_desktop_settings_summary">Expandir el escritorio ocultando la barra de estado, la barra de navegación o ambas</string>
+    <string name="expanded_desktop_options_title">Opciones de personalización</string>
+    <string name="expanded_desktop_style_title">Estilo de escritorio expandido</string>
+    <string name="expanded_desktop_style_hide_nothing">Mostrar todo</string>
+    <string name="expanded_desktop_style_hide_status">Ocultar barra de estado</string>
+    <string name="expanded_desktop_style_hide_navigation">Ocultar barra de navegación</string>
+    <string name="expanded_desktop_style_hide_both">Ocultar ambas</string>
+    <string name="expanded_desktop_nothing_to_show_text">Desactivar el interruptor para personalizar las opciones de escritorio extendido por aplicación</string>
+
     <!-- Statusbar clock font style -->
     <string name="clock_font_style_title">Fuente</string>
     <string name="clock_font_normal">Normal</string>
