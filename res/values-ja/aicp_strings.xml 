@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!--Status bar date -->
+    <string name="status_bar_clock_category">時計</string>
+    <string name="status_bar_date_title">日付</string>
+    <string name="status_bar_date_none">非表示 (デフォルト)</string>
+    <string name="status_bar_date_small">小</string>
+    <string name="status_bar_date_normal">標準</string>
+    <string name="status_bar_date_format_title">日付のフォーマット</string>
+    <string name="status_bar_date_style">日付のスタイル</string>
+    <string name="status_bar_date_style_normal">標準</string>
+    <string name="status_bar_date_style_lowercase">小文字</string>
+    <string name="status_bar_date_style_uppercase">大文字</string>
+    <string name="status_bar_date_format_custom">カスタム Java フォーマット</string>
+    <string name="status_bar_date_string_edittext_title">日付フォーマットは MM/dd/yy のような形でなければいけません</string>
+    <string name="status_bar_date_string_edittext_summary">値を入力する</string>
+    
+    <!-- Date position -->
+    <string name="clock_date_position">日付の位置</string>
+    <string name="clock_date_right">時間の右側</string>
+    <string name="clock_date_left">時間の左側</string>
+
+    <string name="menu_save">保存</string>
+    <string name="menu_cancel">キャンセル</string>
+    
+    <!-- Pa Battery -->
+    <string name="status_bar_battery_style_solid">ソリッド</string>
+</resources>
+
