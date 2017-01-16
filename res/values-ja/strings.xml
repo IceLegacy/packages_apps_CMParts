@@ -494,4 +494,7 @@
   <string name="expanded_desktop_style_hide_navigation">ナビゲーションバーを非表示</string>
   <string name="expanded_desktop_style_hide_both">両方を非表示</string>
   <string name="expanded_desktop_nothing_to_show_text">拡張デスクトップをアプリごとにカスタマイズするにはスイッチをOFFにしてください</string>
+  <!-- Statusbar clock font style -->
+  <string name="clock_font_style_title">日付のフォント</string>
+  <string name="clock_font_size_title">日付のフォントサイズ</string>
 </resources>
