@@ -217,6 +217,7 @@
   <string name="power_menu_title">電源メニュー</string>
   <string name="power_menu_reboot_title">再起動メニュー</string>
   <string name="power_menu_screenshot_title">スクリーンショット</string>
+  <string name="power_menu_screenrecord_title">スクリーンレコード</string>
   <string name="power_menu_airplane_title">機内モード</string>
   <string name="power_menu_users_title">ユーザーの切り替え</string>
   <string name="power_menu_settings_title">設定のショートカット</string>
