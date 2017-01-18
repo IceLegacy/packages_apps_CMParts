@@ -424,11 +424,10 @@
     <string name="status_bar_quick_qs_pulldown_right">Derecha</string>
 
   <!-- Status bar - Clock -->
-    <string name="status_bar_clock_style_title">Estilo del reloj</string>
-    <string name="status_bar_clock_style_right">A la derecha</string>
-    <string name="status_bar_clock_style_left">A la izquierda</string>
-    <string name="status_bar_clock_style_center">Centrado</string>
-    <string name="status_bar_clock_style_hidden">Oculto</string>
+    <string name="status_bar_clock_position_title">Posición del reloj</string>
+    <string name="status_bar_clock_position_right">Derecha</string>
+    <string name="status_bar_clock_position_left">Izquierda</string>
+    <string name="status_bar_clock_position_center">Centro</string>
 
     <string name="status_bar_am_pm_title">Estilo AM/PM</string>
     <string name="status_bar_am_pm_info">Reloj 24-horas habilitado</string>
