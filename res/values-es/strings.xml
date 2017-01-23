@@ -142,6 +142,8 @@
     <string name="live_display_color_profile_basic_summary">Usa la pantalla sin calibrar</string>
     <string name="live_display_color_profile_adaptive_title">Adaptativo</string>
     <string name="live_display_color_profile_adaptive_summary">Los colores se adaptan a las condiciones ambientales</string>
+    <string name="live_display_color_profile_reading_title">Lectura</string>
+    <string name="live_display_color_profile_reading_summary">Colores más cálidos para minimizar el estrés visual</string>
     <string name="color_calibration_title">Calibración de color</string>
     <string name="color_calibration_summary">Calibrar los colores en pantalla</string>
     <string name="color_red_title">Rojo</string>
@@ -602,5 +604,13 @@
     <string name="clock_font_size_21">21</string>
     <string name="clock_font_size_22">22</string>
     <string name="clock_font_size_23">23</string>
+
+    <!-- Sounds: Charging sounds -->
+    <string name="charging_sounds_settings_title">Sonido al cargar</string>
+    <string name="charging_sounds_enabled_title">Habilitar</string>
+    <string name="charging_sounds_enabled_summary">Reproduce un sonido cuando se conecta o desonecta al cargador</string>
+    <string name="power_notifications_vibrate_title">Vibrar</string>
+    <string name="charging_sounds_ringtone_title">Sonido de notificación</string>
+    <string name="charging_sounds_ringtone_silent">Silencio</string>
 
 </resources>
