@@ -531,7 +531,6 @@
     <string name="status_bar_show_weather_summary">Muestra el clima actual en la barra de estado</string>
 
   <!-- Power: Performance profiles -->
-<<<<<<< HEAD
     <string name="perf_profile_settings_title">Optimizador de batería y rendimiento</string>
     <string name="perf_profile_settings_summary">Ajusta las opciones de ahorro de energía y rendimiento del dispositivo</string>
     <string name="perf_profile_overview_summary">Perfil actual: <xliff:g id="perf_profile_name">%1$s</xliff:g></string>
@@ -615,8 +614,6 @@
     <string name="charging_sounds_ringtone_title">Sonido de notificación</string>
     <string name="charging_sounds_ringtone_silent">Silencio</string>
 
-=======
   <!-- Applications: Expanded desktop -->
   <!-- Sounds: Charging sounds -->
->>>>>>> 81739954... Automatic translation import
 </resources>
