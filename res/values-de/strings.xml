@@ -544,4 +544,10 @@
   <string name="clock_font_size_22">22</string>
   <string name="clock_font_size_23">23</string>
   <!-- Sounds: Charging sounds -->
+  <string name="charging_sounds_settings_title">Ton beim Aufladen</string>
+  <string name="charging_sounds_enabled_title">Aktivieren</string>
+  <string name="charging_sounds_enabled_summary">Beim Anschließen oder Trennen einer Stromquelle einen Ton abspielen</string>
+  <string name="power_notifications_vibrate_title">Vibration</string>
+  <string name="charging_sounds_ringtone_title">Benachrichtigungston</string>
+  <string name="charging_sounds_ringtone_silent">Lautlos</string>
 </resources>
