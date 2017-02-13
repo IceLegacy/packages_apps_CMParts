@@ -30,4 +30,7 @@
     <!-- Aicp Battery -->
     <string name="status_bar_battery_style_aicp">Tha Battery</string>
 
+    <!-- Power menu torch -->
+    <string name="power_menu_torch_title">Torch</string>
+
 </resources>

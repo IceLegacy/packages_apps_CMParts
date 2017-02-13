@@ -27,6 +27,7 @@ import android.provider.Settings;
 import android.support.v7.preference.CheckBoxPreference;
 import android.support.v7.preference.Preference;
 
+import com.android.internal.util.aicp.AicpUtils;
 import com.android.internal.util.cm.PowerMenuConstants;
 
 import org.cyanogenmod.cmparts.R;
@@ -47,6 +48,7 @@ import static com.android.internal.util.cm.PowerMenuConstants.GLOBAL_ACTION_KEY_
 import static com.android.internal.util.cm.PowerMenuConstants.GLOBAL_ACTION_KEY_SCREENSHOT;
 import static com.android.internal.util.cm.PowerMenuConstants.GLOBAL_ACTION_KEY_SETTINGS;
 import static com.android.internal.util.cm.PowerMenuConstants.GLOBAL_ACTION_KEY_SILENT;
+import static com.android.internal.util.cm.PowerMenuConstants.GLOBAL_ACTION_KEY_TORCH;
 import static com.android.internal.util.cm.PowerMenuConstants.GLOBAL_ACTION_KEY_USERS;
 import static com.android.internal.util.cm.PowerMenuConstants.GLOBAL_ACTION_KEY_VOICEASSIST;
 
@@ -64,6 +66,7 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
     private CheckBoxPreference mSilentPref;
     private CheckBoxPreference mVoiceAssistPref;
     private CheckBoxPreference mAssistPref;
+    private CheckBoxPreference mPowermenuTorch;
 
     Context mContext;
     private ArrayList<String> mLocalUserConfig = new ArrayList<String>();
@@ -110,6 +113,8 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
                 mSilentPref = (CheckBoxPreference) findPreference(GLOBAL_ACTION_KEY_VOICEASSIST);
             } else if (action.equals(GLOBAL_ACTION_KEY_ASSIST)) {
                 mSilentPref = (CheckBoxPreference) findPreference(GLOBAL_ACTION_KEY_ASSIST);
+            } else if (action.equals(GLOBAL_ACTION_KEY_TORCH)) {
+                mPowermenuTorch = (CheckBoxPreference) findPreference(GLOBAL_ACTION_KEY_TORCH);
             }
         }
 
@@ -159,6 +164,14 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
 
         if (mBugReportPref != null) {
             mBugReportPref.setChecked(settingsArrayContains(GLOBAL_ACTION_KEY_BUGREPORT));
+        }
+
+        if (mPowermenuTorch != null) {
+            if (!AicpUtils.deviceSupportsFlashLight(getActivity())) {
+                getPreferenceScreen().removePreference(mPowermenuTorch);
+            } else {
+                mPowermenuTorch.setChecked(settingsArrayContains(GLOBAL_ACTION_KEY_TORCH));
+            }
         }
 
         if (mSilentPref != null) {
@@ -229,6 +242,10 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
         } else if (preference == mAssistPref) {
             value = mAssistPref.isChecked();
             updateUserConfig(value, GLOBAL_ACTION_KEY_ASSIST);
+
+        } else if (preference == mPowermenuTorch) {
+            value = mPowermenuTorch.isChecked();
+            updateUserConfig(value, GLOBAL_ACTION_KEY_TORCH);
 
         } else {
             return super.onPreferenceTreeClick(preference);
