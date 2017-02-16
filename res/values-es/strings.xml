@@ -414,15 +414,15 @@
 
   <!-- Status bar -->
     <string name="status_bar_title">Barra de estado</string>
-    <string name="status_bar_toggle_brightness">Control de brillo</string>
-    <string name="status_bar_toggle_brightness_summary">Ajusta el brillo deslizando el dedo por la barra de estado</string>
+    <string name="status_bar_toggle_brightness">Ajuste de brillo</string>
+    <string name="status_bar_toggle_brightness_summary">Ajustar el brillo deslizando a través de la barra de estado</string>
     <string name="status_bar_notif_count_title">Mostrar contador de notificaciones</string>
-    <string name="status_bar_notif_count_summary">Muestra el número de notificaciones pendientes</string>
+    <string name="status_bar_notif_count_summary">Mostrar el número de notificaciones pendientes en la barra de estado</string>
     <string name="status_bar_quick_qs_pulldown_title">Despliegue rápido</string>
-    <string name="status_bar_quick_qs_pulldown_summary">El lado %1$s de la barra de estado despliega los ajustes rápidos</string>
-    <string name="status_bar_quick_qs_pulldown_summary_left">Izquierdo</string>
-    <string name="status_bar_quick_qs_pulldown_summary_right">Derecho</string>
-    <string name="status_bar_quick_qs_pulldown_off">Deshabilitado</string>
+    <string name="status_bar_quick_qs_pulldown_summary">Deslice a la %1$s de la barra de estado para desplegar el panel de ajustes rápidos</string>
+    <string name="status_bar_quick_qs_pulldown_left">Izquierda</string>
+    <string name="status_bar_quick_qs_pulldown_right">Derecha</string>
+    <string name="status_bar_quick_qs_pulldown_off">Desactivado</string>
     <string name="status_bar_quick_qs_pulldown_left">Izquierda</string>
     <string name="status_bar_quick_qs_pulldown_right">Derecha</string>
 
@@ -616,4 +616,43 @@
 
   <!-- Applications: Expanded desktop -->
   <!-- Sounds: Charging sounds -->
+  <string name="charging_sounds_settings_title">Sonidos de carga del dispositivo</string>
+  <string name="charging_sounds_enabled_title">Activar</string>
+  <string name="charging_sounds_enabled_summary">Reproducir un sonido al conectar o desconectar el cargador</string>
+  <string name="power_notifications_vibrate_title">Vibración</string>
+  <string name="charging_sounds_ringtone_title">Sonido de notificación</string>
+  <string name="charging_sounds_ringtone_silent">Silencio</string>
+  <!-- Gestures: Touchscreen gestures -->
+  <string name="touchscreen_gesture_settings_title">Gestos en pantalla táctil</string>
+  <string name="touchscreen_gesture_settings_summary">Realizar varios gestos en pantalla para acciones rápidas</string>
+  <string name="touchscreen_gestures_haptic_feedback_title">Respuesta háptica</string>
+  <string name="touchscreen_gestures_haptic_feedback_summary">Vibrar cuando se detecta un gesto táctil</string>
+  <string name="touchscreen_gesture_two_finger_down_swipe_title">Deslizar hacia abajo con dos dedos</string>
+  <string name="touchscreen_gesture_one_finger_up_swipe_title">Deslizar hacia arriba con un dedo</string>
+  <string name="touchscreen_gesture_one_finger_down_swipe_title">Deslizar hacia abajo con un dedo</string>
+  <string name="touchscreen_gesture_one_finger_left_swipe_title">Deslizar hacia la izquierda con un dedo</string>
+  <string name="touchscreen_gesture_one_finger_right_swipe_title">Deslizar a la derecha con un dedo</string>
+  <string name="touchscreen_gesture_up_arrow_title">Dibujar un \"Λ\"</string>
+  <string name="touchscreen_gesture_down_arrow_title">Dibuja una \"V\"</string>
+  <string name="touchscreen_gesture_left_arrow_title">Dibujar un \"&lt;\"</string>
+  <string name="touchscreen_gesture_right_arrow_title">Dibujar un \"&gt;\"</string>
+  <string name="touchscreen_gesture_letter_c_title">Dibujar la letra \"C\"</string>
+  <string name="touchscreen_gesture_letter_e_title">Dibujar la letra \"e\"</string>
+  <string name="touchscreen_gesture_letter_o_title">Dibujar la letra \"O\"</string>
+  <string name="touchscreen_gesture_letter_m_title">Dibujar la letra \"M\"</string>
+  <string name="touchscreen_gesture_letter_s_title">Dibujar la letra \"S\"</string>
+  <string name="touchscreen_gesture_letter_v_title">Dibuje la letra \"V\"</string>
+  <string name="touchscreen_gesture_letter_w_title">Dibujar la letra \"W\"</string>
+  <string name="touchscreen_gesture_letter_z_title">Dibujar la letra \"Z\"</string>
+  <string name="touchscreen_gesture_action_dialog_title">Acción del gesto</string>
+  <string name="touchscreen_gesture_action_do_nothing">No hacer nada</string>
+  <string name="touchscreen_gesture_action_flashlight">Activar/Desactivar linterna</string>
+  <string name="touchscreen_gesture_action_camera">Abrir la cámara</string>
+  <string name="touchscreen_gesture_action_browser">Abrir el navegador</string>
+  <string name="touchscreen_gesture_action_dialer">Abrir el teléfono</string>
+  <string name="touchscreen_gesture_action_email">Ver sus correos electrónicos</string>
+  <string name="touchscreen_gesture_action_messages">Ver los mensajes</string>
+  <string name="touchscreen_gesture_action_play_pause_music">Reproducir/pausar reproducción de música</string>
+  <string name="touchscreen_gesture_action_previous_track">Desplácese hasta la pista de música anterior</string>
+  <string name="touchscreen_gesture_action_next_track">Saltar a la siguiente pista de música</string>
 </resources>
