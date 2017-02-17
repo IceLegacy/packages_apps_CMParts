@@ -163,6 +163,11 @@ public class KeyHandler implements DeviceKeyHandler {
         return true;
     }
 
+    private boolean hasSetupCompleted() {
+        return Settings.Secure.getInt(mContext.getContentResolver(),
+                Settings.Secure.USER_SETUP_COMPLETE, 0) != 0;
+    }
+
     private void processEvent(final int action) {
         mProximityWakeLock.acquire();
         mSensorManager.registerListener(new SensorEventListener() {
