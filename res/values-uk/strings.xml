@@ -141,6 +141,22 @@
   <!-- Power menu -->
   <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
   <!-- Profiles -->
+  <string name="profile_menu_delete_title">Видалити</string>
+  <string name="profile_action_none">Залишити без змін</string>
+  <string name="profile_action_system">За замовчуванням системи</string>
+  <string name="profile_action_disable">Вимкнути</string>
+  <string name="profile_action_enable">Увімкнути</string>
+  <string name="profile_trigger_a2dp_connect">При підключенні A2DP</string>
+  <string name="profile_trigger_a2dp_disconnect">При відключенні A2DP</string>
+  <string name="profile_tabs_wifi">Wi\u2011Fi</string>
+  <string name="profile_tabs_bluetooth">Bluetooth</string>
+  <string name="profile_tabs_nfc">NFC</string>
+  <string name="profile_triggers_header">Умови активації цього профіля</string>
+  <string name="profile_setup_setup_triggers_title">Крок 1: Додайте умови перемикання</string>
+  <string name="profile_setup_setup_triggers_title_config">Умови перемикання: <xliff:g id="profile_name">%1$s</xliff:g></string>
+  <string name="profile_setup_actions_title">Крок 2: Налаштувати дії</string>
+  <string name="profile_setup_actions_title_config">Зміна дій</string>
+  <string name="wireless_networks_settings_title">Бездротові мережі</string>
   <!-- Profile triggers -->
   <!-- Profiles settings  -->
   <!-- Profile mode options. -->
@@ -174,5 +190,11 @@
   <!-- Power: Performance profiles -->
   <!-- Applications: Expanded desktop -->
   <!-- Sounds: Charging sounds -->
+  <string name="charging_sounds_settings_title">Звуки зарядки</string>
+  <string name="charging_sounds_enabled_title">Увімкнути</string>
+  <string name="charging_sounds_enabled_summary">Грати звук при підключенні чи від\'єднанні від зарядного пристрою</string>
+  <string name="power_notifications_vibrate_title">Вібрувати</string>
+  <string name="charging_sounds_ringtone_title">Звук сповіщення</string>
+  <string name="charging_sounds_ringtone_silent">Без звуку</string>
   <!-- Gestures: Touchscreen gestures -->
 </resources>
