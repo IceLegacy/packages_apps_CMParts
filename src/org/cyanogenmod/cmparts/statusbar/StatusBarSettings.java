@@ -35,8 +35,9 @@ import java.util.Date;
 
 import cyanogenmod.preference.CMSystemSettingListPreference;
 
+import net.margaritov.preference.colorpicker.ColorPickerPreference;
+
 import org.cyanogenmod.cmparts.R;
-import org.cyanogenmod.cmparts.notificationlight.ApplicationLightPreference;
 import org.cyanogenmod.cmparts.SettingsPreferenceFragment;
 
 public class StatusBarSettings extends SettingsPreferenceFragment
@@ -75,7 +76,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment
     private CMSystemSettingListPreference mStatusBarBatteryShowPercent;
     private CMSystemSettingListPreference mFontStyle;
     private CMSystemSettingListPreference mStatusBarClockFontSize;
-    private ApplicationLightPreference mStatusBarBatteryChargingColor;
+    private ColorPickerPreference mStatusBarBatteryChargingColor;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -83,6 +84,9 @@ public class StatusBarSettings extends SettingsPreferenceFragment
         addPreferencesFromResource(R.xml.status_bar_settings);
 
         ContentResolver resolver = getActivity().getContentResolver();
+
+        int intColor;
+        String hexColor;
 
         mStatusBarClock = (CMSystemSettingListPreference) findPreference(STATUS_BAR_CLOCK_STYLE);
         mStatusBarClock.setOnPreferenceChangeListener(this);
@@ -148,14 +152,6 @@ public class StatusBarSettings extends SettingsPreferenceFragment
 
         parseClockDateFormats();
 
-        // Low, Medium and full color preferences
-        mStatusBarBatteryChargingColor = (ApplicationLightPreference) findPreference(STATUS_BAR_BATTERY_BAR_CHARGING_COLOR);
-        int batteryChargingColor = Settings.System.getInt(resolver,
-                    Settings.System.BATTERY_CHARGING_COLOR, Color.WHITE);
-        mStatusBarBatteryChargingColor.setColor(batteryChargingColor);
-        mStatusBarBatteryChargingColor.setOnPreferenceChangeListener(this);
-
-
         mStatusBarBattery =
                 (CMSystemSettingListPreference) findPreference(STATUS_BAR_BATTERY_STYLE);
         mStatusBarBattery.setOnPreferenceChangeListener(this);
@@ -165,6 +161,14 @@ public class StatusBarSettings extends SettingsPreferenceFragment
                 (CMSystemSettingListPreference) findPreference(STATUS_BAR_QUICK_QS_PULLDOWN);
         mQuickPulldown.setOnPreferenceChangeListener(this);
         updateQuickPulldownSummary(mQuickPulldown.getIntValue(0));
+
+        mStatusBarBatteryChargingColor = (ColorPickerPreference) findPreference(STATUS_BAR_BATTERY_BAR_CHARGING_COLOR);
+        mStatusBarBatteryChargingColor.setOnPreferenceChangeListener(this);
+        intColor = Settings.System.getInt(resolver,
+                Settings.System.BATTERY_CHARGING_COLOR, Color.WHITE);
+        hexColor = String.format("#%08x", (0xffffffff & intColor));
+        mStatusBarBatteryChargingColor.setSummary(hexColor);
+        mStatusBarBatteryChargingColor.setNewPreviewColor(intColor);
 
         setStatusBarDateDependencies();
     }
@@ -266,8 +270,12 @@ public class StatusBarSettings extends SettingsPreferenceFragment
             }
             return true;
         } else if (preference == mStatusBarBatteryChargingColor) {
-            ApplicationLightPreference chargingColorPref = (ApplicationLightPreference) preference;
-            updateChargingColorValue(chargingColorPref.getColor());
+            String hex = ColorPickerPreference.convertToARGB(
+                    Integer.valueOf(String.valueOf(newValue)));
+            preference.setSummary(hex);
+            int intHex = ColorPickerPreference.convertToColorInt(hex);
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.BATTERY_CHARGING_COLOR, intHex);
             return true;
         } else {
             int value = Integer.parseInt((String) newValue);
@@ -285,8 +293,6 @@ public class StatusBarSettings extends SettingsPreferenceFragment
         mStatusBarBatteryShowPercent.setEnabled(
                 batteryIconStyle != STATUS_BAR_BATTERY_STYLE_HIDDEN
                 && batteryIconStyle != STATUS_BAR_BATTERY_STYLE_TEXT);
-        mStatusBarBatteryChargingColor.setEnabled(
-                batteryIconStyle != STATUS_BAR_BATTERY_STYLE_HIDDEN);
     }
 
     private void setStatusBarDateDependencies() {
@@ -339,11 +345,5 @@ public class StatusBarSettings extends SettingsPreferenceFragment
         mQuickPulldown.setSummary(value == 0
                 ? R.string.status_bar_quick_qs_pulldown_off
                 : R.string.status_bar_quick_qs_pulldown_summary);
-    }
-
-    protected void updateChargingColorValue(Integer color) {
-        ContentResolver resolver = getActivity().getContentResolver();
-
-        Settings.System.putInt(resolver, Settings.System.BATTERY_CHARGING_COLOR, color);
     }
 }
