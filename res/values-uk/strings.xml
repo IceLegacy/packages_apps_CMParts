@@ -182,6 +182,20 @@
   <!-- Buttons - Enable navbar -->
   <!-- Navigation Bar -->
   <!-- Power menu -->
+  <string name="power_menu_title">Меню кнопки живлення</string>
+  <string name="power_menu_reboot_title">Меню перезавантаження</string>
+  <string name="power_menu_screenshot_title">Скріншот</string>
+  <string name="power_menu_airplane_title">Режим польоту</string>
+  <string name="power_menu_users_title">Перемикання користувачів</string>
+  <string name="power_menu_settings_title">Ярлик налаштувань</string>
+  <string name="power_menu_lockdown_title">Блокування пристрою</string>
+  <string name="power_menu_bug_report_title">Звіт про помилку</string>
+  <string name="power_menu_sound_title">Звукова панель</string>
+  <string name="power_menu_bug_report_disabled">Надсилання звітів про помилки вимкнено в налаштуваннях розробника</string>
+  <string name="volume_keys_control_ring_stream_title">Регулювання гучності рингтону</string>
+  <string name="volume_keys_control_ring_stream_summary_on">Клавіші регулювання гучності контролюють гучність дзвінка</string>
+  <string name="volume_keys_control_ring_stream_summary_off">Клавіші регулювання гучності контролюють гучність медіа-файлів</string>
+  <string name="camera_double_tap_power_gesture_title">Двічі натисніть кнопку живлення для запуску камери</string>
   <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
   <!-- Profiles -->
   <string name="profile_menu_delete_title">Видалити</string>
@@ -194,28 +208,73 @@
   <string name="profile_tabs_wifi">Wi\u2011Fi</string>
   <string name="profile_tabs_bluetooth">Bluetooth</string>
   <string name="profile_tabs_nfc">NFC</string>
-  <string name="profile_triggers_header">Умови активації цього профіля</string>
+  <string name="profile_triggers_header">Умови активації цього профілю</string>
   <string name="profile_setup_setup_triggers_title">Крок 1: Додайте умови перемикання</string>
   <string name="profile_setup_setup_triggers_title_config">Умови перемикання: <xliff:g id="profile_name">%1$s</xliff:g></string>
   <string name="profile_setup_actions_title">Крок 2: Налаштувати дії</string>
   <string name="profile_setup_actions_title_config">Зміна дій</string>
   <string name="wireless_networks_settings_title">Бездротові мережі</string>
   <!-- Profile triggers -->
+  <string name="no_bluetooth_triggers">Не створено жодної пари Bluetooth.\nТоркніться щоб створити пару Bluetooth перед налаштуванням умов перемикання.</string>
+  <string name="no_wifi_triggers">Жодних Wi\u2011Fi точок доступу не налаштовано.\nНатисніть для підключення Wi\u2011Fi перед налаштуванням умов перемикання.</string>
+  <string name="no_triggers_configured">Умови перемикання не налаштовані. Натисніть, щоб додати умову.</string>
+  <string name="no_triggers_configured_nfc">Натисніть, щоб додати NFC-мітку до цього профілю.</string>
+  <string name="profile_setup_setup_triggers_description">Вкажіть умови, при яких буде вмикатися даний профіль</string>
+  <string name="profile_setup_actions_description">Тепер можна налаштувати, що має відбуватися при активації профілю</string>
   <!-- Profiles settings  -->
+  <string name="profiles_settings_title">Системні профілі</string>
+  <string name="profiles_add">Додати</string>
+  <string name="profile_menu_delete">Видалити</string>
+  <string name="profile_settings_title">Профіль</string>
+  <string name="profile_empty_list_profiles_off">Для того, щоб налаштувати та використовувати системні профілі, увімкніть «Профілі».</string>
+  <string name="profile_settings_summary_off">Профілі вимкнено</string>
+  <string name="profile_trigger_configure">Налаштувати перемикання</string>
+  <string name="profile_write_nfc_tag">Записати в NFC мітку</string>
+  <string name="profile_write_touch_tag">Прикладіть мітку для її запису</string>
+  <string name="profile_write_success">Мітка успішно записана</string>
+  <string name="profile_write_failed">Помилка запису даних на мітку!</string>
+  <string name="profile_selected">Вибраний профіль: %1$s</string>
+  <string name="profile_nfc_text">Запис NFC-мітки для профілю дозволить дотиком до мітки вибрати потрібний профіль. При повторному дотику буде відновлений профіль який використовувався раніше.</string>
+  <string name="profile_unknown_nfc_tag">Невідомий профіль</string>
+  <string name="profile_add_nfc_text">Ця NFC-мітка присвоєна невідомому профілю. Прив’язка NFC-мітки до існуючого профілю дозволить використовувати мітку для його вибору.</string>
+  <string name="profile_select">Виберіть профіль</string>
+  <string name="profile_remove_dialog_message">Видалити профіль %1$s?</string>
+  <string name="profile_populate_profile_from_state">Налаштувати профіль, використовуючи поточні параметри пристрою?</string>
+  <string name="profile_menu_fill_from_state">Імпорт поточних параметрів пристрою</string>
+  <string name="profile_remove_current_profile">Не вдалося видалити поточний профіль!</string>
+  <string name="profile_app_group_category_title">Сповіщення</string>
+  <string name="profile_app_group_item_instructions">Додавання або видалення груп</string>
+  <string name="profile_app_group_item_instructions_summary">Зміна налаштувань сповіщень для груп додатків в цьому профілі</string>
   <!-- Profile mode options. -->
   <!-- Add Profile -->
   <!-- Rename Dialog  -->
+  <string name="rename_dialog_title">Перейменувати</string>
+  <string name="rename_dialog_message">Введіть нове ім’я</string>
+  <string name="rename_dialog_hint">Введіть ім\'я профілю</string>
   <!-- Reset Profiles -->
   <!-- Delete confimation messages -->
   <!-- Profile network mode -->
   <!-- Profile Config screen PreferenceGroup titles -->
   <!-- Menu item for managing profiles -->
   <!-- Profile settings screen, section header for settings related to notification profiles -->
+  <string name="profile_settings">Налаштування профілю</string>
+  <string name="profile_trigger_connect">При під’єднанні</string>
+  <string name="profile_trigger_disconnect">При від’єднанні</string>
+  <string name="profile_trigger_notrigger">Не впливає на зміну профілю</string>
   <!-- Profile Settings sound modes labels -->
   <!-- Sound settings screen, setting option name to pick ringtone (a list dialog comes up)-->
   <!-- Title for application group setting screen -->
   <!-- Add application dialog box title -->
   <!-- Profiles - system settings -->
+  <string name="profile_system_settings_title">Налаштування системи</string>
+  <string name="profile_lockmode_title">Режим блокування екрану</string>
+  <string name="profile_lockmode_policy_disabled_summary">Цей параметр профілю вимкнено згідно з політикою адміністратора пристрою</string>
+  <string name="profile_lockmode_insecure_summary">Не запитувати PIN-код або пароль</string>
+  <string name="profile_lockmode_disabled_summary">Вимкнути екран блокування</string>
+  <string name="profile_airplanemode_title">Режим польоту</string>
+  <string name="profile_brightness_title">Яскравість екрану</string>
+  <string name="profile_brightness_override_summary">Встановити на %1$d%%</string>
+  <string name="profile_brightness_override_checkbox_label">Змінити яскравість</string>
   <!-- Connection override toggles (not all are used at this time ) -->
   <!-- Sound settings screen -->
   <!-- Status bar -->
