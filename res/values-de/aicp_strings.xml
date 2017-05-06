@@ -35,4 +35,20 @@
 
     <!-- On-The-Go -->
     <string name="power_menu_onthego_title">\"On-The-Go\" Modus</string>
+
+    <!-- Color Picker -->
+    <string name="dialog_color_picker">Farbwähler</string>
+    <string name="press_color_to_apply">Wähle unten eine Farbe</string>
+    <!-- <string name="arrow_right">→</string>
+    <string name="arrow_down">↓</string> -->
+    <string name="hex">Hex:</string>
+    <string name="hex_hint">#ff000000</string>
+    <string name="set">Setzen</string>
+    <string name="color_default">Standard</string>
+
+    <string name="battery_light_blend_color_title">Farbübergänge</string>
+    <string name="battery_light_blend_color_summary">Farbübergang von voll nach leer bezogen auf den prozentualen Akkustand</string>
+    <string name="battery_light_blend_color_reverse_title">Farbübergang umkehren</string>
+    <string name="battery_light_blend_color_reverse_summary_off">Voll &#8594; Leer: Rot &#8592; Grün &#8592; Blau &#8592; Rot</string>
+    <string name="battery_light_blend_color_reverse_summary_on">Voll &#8594; Leer: Rot &#8594; Grün &#8594; Blau &#8594; Rot</string>
 </resources>
