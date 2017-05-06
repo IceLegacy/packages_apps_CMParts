@@ -26,9 +26,9 @@
     <string name="status_bar_date_style_normal">Нормальный</string>
     <string name="status_bar_date_style_lowercase">Строчными буквами</string>
     <string name="status_bar_date_style_uppercase">Прописными буквами</string>
-    <string name="status_bar_date_format_custom">Свой формат Java</string>
-    <string name="status_bar_date_string_edittext_title">Должно соответствовать Java DateFormat. Например: MM/dd/yy</string>
-    <string name="status_bar_date_string_edittext_summary">Введите строку</string>
+    <string name="status_bar_date_format_custom">Свой Java формат</string>
+    <string name="status_bar_date_string_edittext_title">Формат должен соответствовать Java DateFormat. Например: MM/dd/yy</string>
+    <string name="status_bar_date_string_edittext_summary">Введите значение</string>
 
     <!-- Date position -->
     <string name="clock_date_position">Расположение даты</string>
@@ -39,10 +39,10 @@
     <string name="menu_cancel">Отменить</string>
 
     <!-- Pa Battery -->
-    <string name="status_bar_battery_style_solid">Сплошний круг</string>
+    <string name="status_bar_battery_style_solid">Сплошной</string>
 
     <!-- Aicp Battery -->
-    <string name="status_bar_battery_style_aicp">AICP батарея</string>
+    <string name="status_bar_battery_style_aicp">AICP</string>
 
     <!-- Power menu torch -->
     <string name="power_menu_torch_title">Фонарик</string>
@@ -55,7 +55,11 @@
     <string name="press_color_to_apply">Нажмите на цвет, чтобы применить</string>
     <string name="set">Установить</string>
     <string name="color_default">По умолчанию</string>
-
+    <string name="battery_light_blend_color_title">Смешивание цветов</string>
+    <string name="battery_light_blend_color_summary">Смешать полные/пустые цвета, соответствующие проценту заряда батареи</string>
+    <string name="battery_light_blend_color_reverse_title">Обратное направление цветов</string>
+    <string name="battery_light_blend_color_reverse_summary_off">Полный &#8594; пустой: красный &#8592; зеленый &#8592; синий &#8592; красный</string>
+    <string name="battery_light_blend_color_reverse_summary_on">Полный &#8594; пустой: красный &#8594; зеленый &#8594; синий &#8594; красный</string>
     <!-- Translating strings from strings.xml -->
     <!-- -->
     <!-- Button settings -->
@@ -63,19 +67,45 @@
 
     <!-- Sounds: Charging sounds -->
     <string name="charging_sounds_settings_title">Звук при зарядке</string>
-    <string name="charging_sounds_enabled_title">Включить</string>
-    <string name="charging_sounds_enabled_summary">Воспроизводить звук при подключении или отключении источника питания</string>
-    <string name="power_notifications_vibrate_title">Вибросигнал</string>
+    <string name="charging_sounds_enabled_title">Включено</string>
+    <string name="charging_sounds_enabled_summary">Звуковое уведомление о подключении или отключении источника питания</string>
+    <string name="power_notifications_vibrate_title">Вибрация</string>
     <string name="charging_sounds_ringtone_title">Звук уведомления</string>
     <string name="charging_sounds_ringtone_silent">Без звука</string>
+
 
     <!-- Power menu -->
     <string name="power_menu_screenrecord_title">Запись экрана</string>
 
     <!-- Status bar - Battery charging color -->
-    <string name="battery_charging_color_title">Цвет значка во время зарядки</string>
+    <string name="battery_charging_color_title">Цвет иконки батареи при зарядке</string>
 
     <!-- Statusbar clock font style -->
     <string name="clock_font_style_title">Шрифт</string>
+    <string name="clock_font_normal">Обычный</string>
+    <string name="clock_font_italic">Курсив</string>
+    <string name="clock_font_bold">Жирный</string>
+    <string name="clock_font_bold_italic">Жирный курсив</string>
+    <string name="clock_font_light">Легкий</string>
+    <string name="clock_font_light_italic">Легкий курсив</string>
+    <string name="clock_font_thin">Тонкий</string>
+    <string name="clock_font_thin_italic">Тонкий курсив</string>
+    <string name="clock_font_condensed">Уплотненный</string>
+    <string name="clock_font_condensed_italic">Уплотненный курсив</string>
+    <string name="clock_font_condensed_light">Уплотненный легкий</string>
+    <string name="clock_font_condensed_light_italic">Уплотненный Light курсив</string>
+    <string name="clock_font_condensed_bold">Уплотненный жирный</string>
+    <string name="clock_font_condensed_bold_italic">Уплотненный жирный курсив</string>
+    <string name="clock_font_medium">Средний</string>
+    <string name="clock_font_medium_italic">Средний курсив</string>
+    <string name="clock_font_black">Очень жирный</string>
+    <string name="clock_font_black_italic">Очень жирный курсив</string>
+    <string name="clock_font_dancingscript">DancingScript</string>
+    <string name="clock_font_dancingscript_bold">DancingScript жирный</string>
+    <string name="clock_font_comingsoon">ComingSoon</string>
+    <string name="clock_font_notoserif">NotoSerif обычный</string>
+    <string name="clock_font_notoserif_italic">NotoSerif курсив</string>
+    <string name="clock_font_notoserif_bold">NotoSerif жирный</string>
+    <string name="clock_font_notoserif_bold_italic">NotoSerif жирный курсив</string>
     <string name="clock_font_size_title">Размер шрифта</string>
 </resources>
