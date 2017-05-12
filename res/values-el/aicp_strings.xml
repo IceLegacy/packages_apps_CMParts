@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!--Status bar date -->
+    <string name="status_bar_clock_category">Ρολόι</string>
+    <string name="status_bar_date_title">Ημερομηνία</string>
+    <string name="status_bar_date_none">Απόκρυψη</string>
+    <string name="status_bar_date_small">Μικρό</string>
+    <string name="status_bar_date_normal">Κανονικό</string>
+    <string name="status_bar_date_format_title">Ορισμός Ημερομηνίας</string>
+    <string name="status_bar_date_style">Διαμόρφωση Ημερομηνία</string>
+    <string name="status_bar_date_style_normal">Κανονικό</string>
+    <string name="status_bar_date_style_lowercase">Μικρά γράμματα</string>
+    <string name="status_bar_date_style_uppercase">Κεφαλαία γράμματα</string>
+    <string name="status_bar_date_format_custom">Προσαρμογή Java</string>
+    <string name="status_bar_date_string_edittext_title">Πρέπει να είναι σε μορφή ημερομηνίας. πχ: ΜΜ/ΗΗ/ΕΕ</string>
+    <string name="status_bar_date_string_edittext_summary">Εισαγωγή</string>
+
+    <!-- Date position -->
+    <string name="clock_date_position">Θέση ημερομηνίας</string>
+    <string name="clock_date_right">Δεξιά από την ώρα</string>
+    <string name="clock_date_left">Αριστερά από την ώρα</string>
+
+    <string name="menu_save">Αποθήκευση</string>
+    <string name="menu_cancel">Απαλοιφή</string>
+
+    <!-- Pa Battery -->
+    <string name="status_bar_battery_style_solid">Στρογγυλό</string>
+
+    <!-- Aicp Battery -->
+    <string name="status_bar_battery_style_aicp">Tha Battery</string>
+
+    <!-- Power menu torch -->
+    <string name="power_menu_torch_title">Φακός</string>
+
+    <!-- On-The-Go -->
+    <string name="power_menu_onthego_title">On-The-Go λειτουργία</string>
+
+    <!-- Color Picker -->
+    <string name="dialog_color_picker">Επιλογή χρώματος</string>
+    <string name="press_color_to_apply">Επιλέξτε κάποιο χρώμα για εισαγωγή</string>
+<!--    <string name="arrow_right">→</string>
+    <string name="arrow_down">↓</string> -->
+    <string name="hex">Hex:</string>
+    <string name="hex_hint">#ff000000</string>
+    <string name="set">Set</string>
+    <string name="color_default">Κλασσικό</string>
+
+    <string name="battery_light_blend_color_title">Μείγμα χρωμάτων</string>
+    <string name="battery_light_blend_color_summary">Μείγμα χρωμάτων σύμφωνα με το ποσοστό της μπαταρίας</string>
+    <string name="battery_light_blend_color_reverse_title">Αντίθετο χρωμάτων</string>
+    <string name="battery_light_blend_color_reverse_summary_off">Γεμάτο &#8594; κενό: κόκκινο &#8592; Πράσινο &#8592; Μπλε &#8592; Κόκκινο</string>
+    <string name="battery_light_blend_color_reverse_summary_on">Γεμάτο &#8594; κενό: κόκκινο &#8594; Πράσινο &#8594; Μπλε &#8594; Κόκκινο</string>
+</resources>
