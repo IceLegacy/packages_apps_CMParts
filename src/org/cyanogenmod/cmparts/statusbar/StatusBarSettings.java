@@ -57,6 +57,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment
     private static final String STATUS_BAR_CLOCK_FONT_STYLE = "font_style";
     private static final String STATUS_BAR_CLOCK_FONT_SIZE  = "status_bar_clock_font_size";
     private static final String STATUS_BAR_BATTERY_BAR_CHARGING_COLOR = "battery_charging_color";
+    private static final String STATUS_BAR_BATTERY_SAVER_COLOR = "status_bar_battery_saver_color";
 
     private static final int STATUS_BAR_BATTERY_STYLE_HIDDEN = 4;
     private static final int STATUS_BAR_BATTERY_STYLE_TEXT = 6;
@@ -79,6 +80,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment
     private CMSystemSettingListPreference mStatusBarBatteryShowPercent;
     private CMSystemSettingListPreference mFontStyle;
     private CMSystemSettingListPreference mStatusBarClockFontSize;
+    private ColorPickerPreference mBatterySaverColor;
     private ColorPickerPreference mStatusBarBatteryChargingColor;
 
     @Override
@@ -172,6 +174,12 @@ public class StatusBarSettings extends SettingsPreferenceFragment
         hexColor = String.format("#%08x", (0xffffffff & intColor));
         mStatusBarBatteryChargingColor.setSummary(hexColor);
         mStatusBarBatteryChargingColor.setNewPreviewColor(intColor);
+
+        int batterySaverColor = Settings.Secure.getInt(resolver,
+                Settings.Secure.STATUS_BAR_BATTERY_SAVER_COLOR, 0xfff4511e);
+        mBatterySaverColor = (ColorPickerPreference) findPreference("status_bar_battery_saver_color");
+        mBatterySaverColor.setNewPreviewColor(batterySaverColor);
+        mBatterySaverColor.setOnPreferenceChangeListener(this);
 
         setStatusBarDateDependencies();
     }
@@ -279,6 +287,11 @@ public class StatusBarSettings extends SettingsPreferenceFragment
             int intHex = ColorPickerPreference.convertToColorInt(hex);
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.BATTERY_CHARGING_COLOR, intHex);
+            return true;
+        } else if (preference.equals(mBatterySaverColor)) {
+            int color = ((Integer) newValue).intValue();
+            Settings.Secure.putInt(getActivity().getContentResolver(),
+                    Settings.Secure.STATUS_BAR_BATTERY_SAVER_COLOR, color);
             return true;
         } else {
             int value = Integer.parseInt((String) newValue);
