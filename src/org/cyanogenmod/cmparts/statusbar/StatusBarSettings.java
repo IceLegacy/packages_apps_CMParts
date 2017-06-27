@@ -34,6 +34,7 @@ import android.widget.EditText;
 import java.util.Date;
 
 import cyanogenmod.preference.CMSystemSettingListPreference;
+import cyanogenmod.preference.CMSystemSettingSwitchPreference;
 
 import net.margaritov.preference.colorpicker.ColorPickerPreference;
 
@@ -53,6 +54,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment
     private static final String STATUS_BAR_DATE_FORMAT = "status_bar_date_format";
     private static final String STATUS_BAR_BATTERY_STYLE = "status_bar_battery_style";
     private static final String STATUS_BAR_SHOW_BATTERY_PERCENT = "status_bar_show_battery_percent";
+    private static final String STATUS_BAR_PULSE_CHARGING_BATTERY = "status_bar_pulse_charging_battery";
     private static final String STATUS_BAR_QUICK_QS_PULLDOWN = "qs_quick_pulldown";
     private static final String STATUS_BAR_CLOCK_FONT_STYLE = "font_style";
     private static final String STATUS_BAR_CLOCK_FONT_SIZE  = "status_bar_clock_font_size";
@@ -80,6 +82,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment
     private CMSystemSettingListPreference mStatusBarBatteryShowPercent;
     private CMSystemSettingListPreference mFontStyle;
     private CMSystemSettingListPreference mStatusBarClockFontSize;
+    private CMSystemSettingSwitchPreference mStatusBarPulseChargingBattery;
     private ColorPickerPreference mBatterySaverColor;
     private ColorPickerPreference mStatusBarBatteryChargingColor;
 
@@ -98,6 +101,9 @@ public class StatusBarSettings extends SettingsPreferenceFragment
 
         mStatusBarBatteryShowPercent =
                 (CMSystemSettingListPreference) findPreference(STATUS_BAR_SHOW_BATTERY_PERCENT);
+
+        mStatusBarPulseChargingBattery =
+                (CMSystemSettingSwitchPreference) findPreference(STATUS_BAR_PULSE_CHARGING_BATTERY);
 
         mStatusBarAmPm = (CMSystemSettingListPreference) findPreference(STATUS_BAR_AM_PM);
         if (DateFormat.is24HourFormat(getActivity())) {
@@ -309,6 +315,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment
         mStatusBarBatteryShowPercent.setEnabled(
                 batteryIconStyle != STATUS_BAR_BATTERY_STYLE_HIDDEN
                 && batteryIconStyle != STATUS_BAR_BATTERY_STYLE_TEXT);
+        mStatusBarPulseChargingBattery.setEnabled(mStatusBarBatteryShowPercent.isEnabled());
     }
 
     private void setStatusBarDateDependencies() {
