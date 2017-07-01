@@ -230,7 +230,7 @@
     <string name="navigation_bar_home_double_tap_title">Acción de doble toque en inicio</string>
     <string name="navigation_bar_recents_title">Acción de pulsación prolongada en botón recientes</string>
 
-  <!-- Power menu -->
+    <!-- Power menu -->
     <string name="power_menu_title">Menú de apagado</string>
     <string name="power_menu_reboot_title">Menú de reinicio</string>
     <string name="power_menu_screenshot_title">Captura de pantalla</string>
@@ -249,10 +249,12 @@
 
     <string name="camera_double_tap_power_gesture_title">Presionar dos veces el botón de encendido para abrir la cámara</string>
 
-  <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
-    <string name="camera_double_tap_power_gesture_desc">Abrir la cámara sin desbloquear la pantalla</string>
-
-  <!-- Profiles -->
+    <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
+    <string name="camera_double_tap_power_gesture_desc">Abrir rápidamente la cámara sin desbloquear la pantalla</string>
+    <string name="torch_long_press_power_gesture_title">Mantenega pulsado para activar la linterna</string>
+    <string name="torch_long_press_power_gesture_desc">Mantenga pulsado el botón de encendido para activar la linterna cuando la pantalla esté apagada</string>
+    <string name="torch_long_press_power_timeout_title">Apagar automáticamente la linterna</string>
+    <!-- Profiles -->
     <string name="profile_menu_delete_title">Borrar</string>
     <string name="profile_action_none">No cambiar</string>
     <string name="profile_action_system">Predeterminados del sistema</string>
