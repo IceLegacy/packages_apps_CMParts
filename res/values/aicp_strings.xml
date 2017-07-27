@@ -53,4 +53,6 @@
 
     <string name="status_bar_pulse_charging_battery_title">Pulse while charging</string>
     <string name="status_bar_pulse_charging_battery_summary">Enable for all, disable for circle-solid battery styles</string>
+
+    <string name="battery_light_allow_on_dnd_title">Battery light in Do Not Disturb mode</string>
 </resources>
