@@ -120,10 +120,10 @@ public class ColorPickerPreference extends Preference implements
      * @author Randall Rushing aka Bigrushdog
      */
     private void setDefaultButton() {
-        if (mView == null)
+        if (mHolder == null)
             return;
 
-        LinearLayout widgetFrameView = ((LinearLayout) mView
+        LinearLayout widgetFrameView = ((LinearLayout) mHolder
                 .findViewById(android.R.id.widget_frame));
         if (widgetFrameView == null)
             return;
