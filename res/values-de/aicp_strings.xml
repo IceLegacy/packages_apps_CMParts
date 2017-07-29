@@ -37,7 +37,6 @@
     <string name="power_menu_onthego_title">\"On-The-Go\" Modus</string>
 
     <!-- Color Picker -->
-    <string name="dialog_color_picker">Farbwähler</string>
     <string name="press_color_to_apply">Wähle unten eine Farbe</string>
     <!-- <string name="arrow_right">→</string>
     <string name="arrow_down">↓</string> -->
