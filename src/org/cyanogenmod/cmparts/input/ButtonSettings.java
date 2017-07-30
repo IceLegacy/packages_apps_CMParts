@@ -98,7 +98,8 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         SPLIT_SCREEN,
         SINGLE_HAND_LEFT,
         SINGLE_HAND_RIGHT,
-        SCREENSHOT;
+        SCREENSHOT,
+        EXPAND_NOTIFICATIONS;
 
         public static Action fromIntSafe(int id) {
             if (id < NOTHING.ordinal() || id > Action.values().length) {
