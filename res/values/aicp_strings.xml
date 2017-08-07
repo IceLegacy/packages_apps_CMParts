@@ -55,4 +55,9 @@
     <string name="status_bar_pulse_charging_battery_summary">Enable for all, disable for circle-solid battery styles</string>
 
     <string name="battery_light_allow_on_dnd_title">Battery light in Do Not Disturb mode</string>
+
+    <!-- ANBI -->
+    <string name="buttons_misc_cat">Misc</string>
+    <string name="anbi_title">Accidental touch</string>
+    <string name="anbi_summary">Prevent interaction with navigation buttons while the screen is being touched</string>
 </resources>
