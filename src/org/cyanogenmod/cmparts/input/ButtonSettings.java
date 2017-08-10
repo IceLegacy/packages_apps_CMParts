@@ -71,6 +71,8 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     private static final String KEY_HOME_ANSWER_CALL = "home_answer_call";
     private static final String KEY_VOLUME_MUSIC_CONTROLS = "volbtn_music_controls";
     private static final String KEY_VOLUME_CONTROL_RING_STREAM = "volume_keys_control_ring_stream";
+    private static final String KEY_ACCIDENTAL_TOUCH = "anbi_enabled";
+    private static final String KEY_POCKET_JUDGE = "pocket_judge";
 
     private static final String CATEGORY_POWER = "power_key";
     private static final String CATEGORY_HOME = "home_key";
@@ -81,6 +83,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     private static final String CATEGORY_CAMERA = "camera_key";
     private static final String CATEGORY_VOLUME = "volume_keys";
     private static final String CATEGORY_BACKLIGHT = "key_backlight";
+    private static final String CATEGORY_MISC = "buttons_misc";
 
     // Available custom actions to perform on a key press.
     // Must match values for KEY_HOME_LONG_PRESS_ACTION in:
@@ -141,6 +144,8 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     private SwitchPreference mDisableNavigationKeys;
     private SwitchPreference mPowerEndCall;
     private SwitchPreference mHomeAnswerCall;
+    private SwitchPreference mAccidentalTouch;
+    private SwitchPreference mPocketJudge;
 
     private Handler mHandler;
 
@@ -193,12 +198,20 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
                 (PreferenceCategory) prefScreen.findPreference(CATEGORY_VOLUME);
         final PreferenceCategory cameraCategory =
                 (PreferenceCategory) prefScreen.findPreference(CATEGORY_CAMERA);
+        final PreferenceCategory miscCategory =
+                (PreferenceCategory) prefScreen.findPreference(CATEGORY_MISC);
 
         // Power button ends calls.
         mPowerEndCall = (SwitchPreference) findPreference(KEY_POWER_END_CALL);
 
         // Home button answers calls.
         mHomeAnswerCall = (SwitchPreference) findPreference(KEY_HOME_ANSWER_CALL);
+
+        // Prevent accidental touch to hw keys.
+        mAccidentalTouch = (SwitchPreference) findPreference(KEY_ACCIDENTAL_TOUCH);
+
+        // Prevent accidental touch to hw keys and screen while in pocket.
+        mPocketJudge = (SwitchPreference) findPreference(KEY_POCKET_JUDGE);
 
         mHandler = new Handler();
 
@@ -374,6 +387,12 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
             }
         } else {
             prefScreen.removePreference(volumeCategory);
+        }
+
+        if (!hasAnyBindableKey) {
+            if (mAccidentalTouch != null) prefScreen.removePreference(mAccidentalTouch);
+            if (mPocketJudge != null) prefScreen.removePreference(mPocketJudge);
+            if (miscCategory != null) prefScreen.removePreference(miscCategory);
         }
 
         try {
