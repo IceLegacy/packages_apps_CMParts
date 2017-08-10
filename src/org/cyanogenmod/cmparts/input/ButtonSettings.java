@@ -615,6 +615,8 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
                 (PreferenceCategory) prefScreen.findPreference(CATEGORY_ASSIST);
         final PreferenceCategory appSwitchCategory =
                 (PreferenceCategory) prefScreen.findPreference(CATEGORY_APPSWITCH);
+        final PreferenceCategory miscCategory =
+                (PreferenceCategory) prefScreen.findPreference(CATEGORY_MISC);
         final ButtonBacklightBrightness backlight =
                 (ButtonBacklightBrightness) prefScreen.findPreference(KEY_BUTTON_BACKLIGHT);
 
@@ -640,6 +642,9 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         }
         if (appSwitchCategory != null) {
             appSwitchCategory.setEnabled(!navbarEnabled);
+        }
+        if (miscCategory != null) {
+            miscCategory.setEnabled(!navbarEnabled);
         }
     }
 
