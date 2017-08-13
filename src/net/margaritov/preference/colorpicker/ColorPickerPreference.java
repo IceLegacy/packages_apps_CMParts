@@ -45,18 +45,21 @@ import org.cyanogenmod.cmparts.R;
 public class ColorPickerPreference extends Preference implements
         Preference.OnPreferenceClickListener, ColorPickerDialog.OnColorChangedListener {
 
-    PreferenceViewHolder mHolder;
-    ColorPickerDialog mDialog;
-    LinearLayout widgetFrameView;
+    private PreferenceViewHolder mHolder;
+    private ColorPickerDialog mDialog;
+    private LinearLayout widgetFrameView;
     private int mValue = Color.BLACK;
     private float mDensity = 0;
     private boolean mAlphaSliderEnabled = true;
 
-    // if we return -6, button is not enabled
-    static final String CMPARTS = "http://schemas.android.com/apk/res/org.cyanogenmod.cmparts";
-    static final int DEF_VALUE_DEFAULT = -6;
-    boolean mUsesDefaultButton = false;
-    int mDefValue = -1;
+    // if android:defaultValue is not set, button is not enabled
+    private static final String CMPARTS =
+            "http://schemas.android.com/apk/res/org.cyanogenmod.cmparts";
+    private static final String ANDROIDNS = "http://schemas.android.com/apk/res/android";
+    private static final int DEF_VALUE_DEFAULT = -6;
+    private static final int DEF_VALUE_DEFAULT_CHECK = -7; // != DEF_VALUE_DEFAULT
+    private boolean mUsesDefaultButton = false;
+    private int mDefValue = -1;
 
     private EditText mEditText;
 
@@ -90,9 +93,15 @@ public class ColorPickerPreference extends Preference implements
         setOnPreferenceClickListener(this);
         if (attrs != null) {
             mAlphaSliderEnabled = attrs.getAttributeBooleanValue(null, "alphaSlider", false);
-            int defVal = attrs.getAttributeIntValue(CMPARTS, "defaultColorValue", DEF_VALUE_DEFAULT);
+            int defVal = attrs.getAttributeIntValue(ANDROIDNS, "defaultValue", DEF_VALUE_DEFAULT);
             if (defVal != DEF_VALUE_DEFAULT) {
-                mUsesDefaultButton =  true;
+                mUsesDefaultButton = true;
+            } else {
+                int defValCheck = attrs.getAttributeIntValue(ANDROIDNS, "defaultValue",
+                        DEF_VALUE_DEFAULT_CHECK);
+                mUsesDefaultButton = defValCheck == defVal;
+            }
+            if (mUsesDefaultButton) {
                 mDefValue = defVal;
             }
         }
@@ -146,16 +155,17 @@ public class ColorPickerPreference extends Preference implements
 
         widgetFrameView.addView(defView);
         widgetFrameView.setMinimumWidth(0);
-        defView.setBackground(getContext().getDrawable(android.R.drawable.ic_menu_revert));
+        defView.setBackground(getContext().getDrawable(R.drawable.ic_reset_color));
         defView.setTag("default");
         defView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                try {
-                    getOnPreferenceChangeListener().onPreferenceChange(ColorPickerPreference.this,
-                            Integer.valueOf(mDefValue));
-                } catch (NullPointerException e) {
+                if (!isEnabled()) {
+                    return;
                 }
+                try {
+                    onColorChanged(Integer.valueOf(mDefValue));
+                } catch (NullPointerException e) {}
             }
         });
 
@@ -197,12 +207,14 @@ public class ColorPickerPreference extends Preference implements
         iView.setBackgroundDrawable(new AlphaPatternDrawable((int) (5 * mDensity)));
         iView.setImageBitmap(getPreviewBitmap());
         iView.setTag("preview");
+        /*
         iView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 showDialog(null);
             }
         });
+        */
     }
 
     private Bitmap getPreviewBitmap() {
@@ -243,7 +255,7 @@ public class ColorPickerPreference extends Preference implements
     }
 
     public boolean onPreferenceClick(Preference preference) {
-        //showDialog(null);
+        showDialog(null);
         return false;
     }
 
