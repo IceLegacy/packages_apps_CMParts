@@ -15,7 +15,7 @@
     <string name="status_bar_date_format_custom">カスタム Java フォーマット</string>
     <string name="status_bar_date_string_edittext_title">日付フォーマットは MM/dd/yy のような形でなければいけません</string>
     <string name="status_bar_date_string_edittext_summary">値を入力する</string>
-    
+
     <!-- Date position -->
     <string name="clock_date_position">日付の位置</string>
     <string name="clock_date_right">時間の右側</string>
@@ -23,8 +23,41 @@
 
     <string name="menu_save">保存</string>
     <string name="menu_cancel">キャンセル</string>
-    
+
     <!-- Pa Battery -->
     <string name="status_bar_battery_style_solid">ソリッド</string>
-</resources>
 
+    <!-- Aicp Battery -->
+    <string name="status_bar_battery_style_aicp">Tha バッテリー</string>
+
+    <!-- Power menu torch -->
+    <string name="power_menu_torch_title">ライト</string>
+
+    <!-- On-The-Go -->
+    <string name="power_menu_onthego_title">On-The-Go モード</string>
+
+    <!-- Color Picker -->
+    <string name="press_color_to_apply">下の色を押すと適用します</string>
+    <string name="set">セット</string>
+    <string name="color_default">デフォルト</string>
+
+    <string name="battery_light_blend_color_title">色のブレンド</string>
+    <string name="battery_light_blend_color_summary">バッテリー残量に応じてフル/残量低下時の色をブレンドします</string>
+    <string name="battery_light_blend_color_reverse_title">色の順番を逆転させる</string>
+    <string name="battery_light_blend_color_reverse_summary_off">フル &#8594; 残量低下: 赤 &#8592; 緑 &#8592; 青 &#8592; 赤</string>
+    <string name="battery_light_blend_color_reverse_summary_on">フル &#8594; 残量低下: 赤 &#8594; 緑 &#8594; 青 &#8594; 赤</string>
+
+    <string name="status_bar_pulse_charging_battery_title">充電中に点滅させる</string>
+    <string name="status_bar_pulse_charging_battery_summary">サークル・ソリッドスタイルでは無効に、それ以外では有効になります</string>
+
+    <string name="battery_light_allow_on_dnd_title">サイレントモードでのバッテリーライト</string>
+
+    <!-- ANBI -->
+    <string name="buttons_misc_cat">その他</string>
+    <string name="anbi_title">誤タッチ防止</string>
+    <string name="anbi_summary">画面がタッチされている間、ナビバーを誤ってタッチしても動作しないようにします</string>
+
+    <!-- Pocket judge -->
+    <string name="pocket_judge_title">ポケットの検出</string>
+    <string name="pocket_judge_summary">端末がポケットの中にある時、画面とボタンの入力をブロックします</string>
+</resources>
