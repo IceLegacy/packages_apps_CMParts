@@ -40,6 +40,9 @@
     <!-- Power menu torch -->
     <string name="power_menu_torch_title">Torch</string>
 
+    <!-- Power menu Screenrecord -->
+    <string name="power_menu_screenrecord_title">Screenrecord</string>
+
     <!-- On-The-Go -->
     <string name="power_menu_onthego_title">On-The-Go mode</string>
 
