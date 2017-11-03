@@ -139,6 +139,8 @@
   <string name="live_display_color_profile_reading_summary">안구 피로를 줄이기 위한 따뜻한 색상</string>
   <string name="live_display_color_profile_srgb_title">sRGB</string>
   <string name="live_display_color_profile_srgb_summary">sRGB 색 공간에 적합한 색상</string>
+  <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
+  <string name="live_display_color_profile_dci_p3_summary">DCI-P3 색 공간에 적합한 색상</string>
   <string name="color_calibration_title">색상 보정</string>
   <string name="color_calibration_summary">화면의 색상을 보정</string>
   <string name="color_red_title">빨강</string>
@@ -174,6 +176,8 @@
   <string name="hardware_keys_action_sleep">화면 끄기</string>
   <string name="hardware_keys_action_last_app">마지막으로 사용한 앱</string>
   <string name="hardware_keys_action_split_screen">화면 분할</string>
+  <string name="hardware_keys_action_single_handed_left">한 손 모드 (왼쪽)</string>
+  <string name="hardware_keys_action_single_handed_right">한 손 모드 (오른쪽)</string>
   <string name="camera_sleep_on_release_title">화면 엿보기</string>
   <string name="camera_sleep_on_release_summary">버튼을 반만 누르고 있는 동안 화면을 계속 켜두기</string>
   <string name="camera_launch_title">카메라 실행</string>
@@ -237,6 +241,11 @@
   <string name="torch_long_press_power_gesture_title">길게 눌러 손전등 켜기</string>
   <string name="torch_long_press_power_gesture_desc">화면이 꺼져 있을 때 전원 버튼을 길게 눌러 손전등 켜기</string>
   <string name="torch_long_press_power_timeout_title">자동으로 손전등 끄기</string>
+  <string name="torch_long_press_power_timeout_never">끄지 않음</string>
+  <string name="torch_long_press_power_timeout_1min">1분</string>
+  <string name="torch_long_press_power_timeout_2min">2분</string>
+  <string name="torch_long_press_power_timeout_5min">5분</string>
+  <string name="torch_long_press_power_timeout_10min">10분</string>
   <!-- Profiles -->
   <string name="profile_menu_delete_title">삭제</string>
   <string name="profile_action_none">변경하지 않음</string>
@@ -388,7 +397,10 @@
   <string name="status_bar_icons_title">상태 표시줄 아이콘</string>
   <string name="status_bar_notif_count_title">알림 갯수 표시</string>
   <string name="status_bar_notif_count_summary">읽지 않은 알림 숫자 표시</string>
+  <string name="status_bar_system_icons_title">시스템 아이콘</string>
+  <string name="status_bar_system_icons_summary">상태 표시줄에 표시할 아이콘 설정</string>
   <!-- Status bar - Clock -->
+  <string name="status_bar_clock_title">시계</string>
   <string name="status_bar_clock_position_title">시계 위치</string>
   <string name="status_bar_clock_position_right">오른쪽</string>
   <string name="status_bar_clock_position_left">왼쪽</string>
@@ -399,6 +411,7 @@
   <string name="status_bar_am_pm_small">작게</string>
   <string name="status_bar_am_pm_hidden">숨김</string>
   <!-- Status bar - Battery -->
+  <string name="status_bar_battery_title">배터리 표시</string>
   <string name="status_bar_battery_style_title">배터리 표시 스타일</string>
   <string name="status_bar_battery_style_icon_portrait">세로 아이콘</string>
   <string name="status_bar_battery_style_icon_landscape">가로 아이콘</string>

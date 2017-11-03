@@ -99,7 +99,7 @@
   <string name="notification_light_use_multiple_leds">多 LED</string>
   <string name="keywords_lights_brightness_level">降低 LED 亮度</string>
   <string name="notification_light_automagic">自动选择颜色</string>
-  <string name="notification_light_automagic_summary">正在自动选择颜色</string>
+  <string name="notification_light_automagic_summary">自动选择颜色</string>
   <!-- Lights settings, LED notification -->
   <string name="led_notification_title">指示灯设置</string>
   <string name="led_notification_text">LED 灯被“设置”启用</string>
@@ -137,6 +137,10 @@
   <string name="live_display_color_profile_adaptive_summary">颜色根据环境条件自适应</string>
   <string name="live_display_color_profile_reading_title">阅读</string>
   <string name="live_display_color_profile_reading_summary">使用暖色调以减少视疲劳</string>
+  <string name="live_display_color_profile_srgb_title">sRGB</string>
+  <string name="live_display_color_profile_srgb_summary">颜色校准到 sRGB 色彩空间</string>
+  <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
+  <string name="live_display_color_profile_dci_p3_summary">色彩精确到 DCI-P3 的色彩空间</string>
   <string name="color_calibration_title">颜色校准</string>
   <string name="color_calibration_summary">校准屏幕颜色</string>
   <string name="color_red_title">红</string>
@@ -185,7 +189,7 @@
   <string name="volbtn_cursor_control_on">音量+/-光标左/右移动</string>
   <string name="volbtn_cursor_control_on_reverse">音量+/-光标右/左移动</string>
   <string name="power_end_call_title">结束通话</string>
-  <string name="power_end_call_summary">按电源按钮结束当前通话</string>
+  <string name="power_end_call_summary">按电源键结束当前通话</string>
   <string name="swap_volume_buttons_title">重新调整</string>
   <string name="swap_volume_buttons_summary">旋转屏幕时交换音量键的布局</string>
   <string name="button_wake_title">唤醒设备</string>
@@ -231,12 +235,17 @@
   <string name="volume_keys_control_ring_stream_title">控制铃声音量</string>
   <string name="volume_keys_control_ring_stream_summary_on">使用音量键控制铃声音量</string>
   <string name="volume_keys_control_ring_stream_summary_off">音量键控制媒体音量</string>
-  <string name="camera_double_tap_power_gesture_title">按两下电源按钮以启动相机</string>
+  <string name="camera_double_tap_power_gesture_title">按两下电源键启动相机</string>
   <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
   <string name="camera_double_tap_power_gesture_desc">在不解锁屏幕的情况下快速开启相机</string>
   <string name="torch_long_press_power_gesture_title">长按打开手电筒</string>
   <string name="torch_long_press_power_gesture_desc">屏幕关闭时，长按电源键开启手电筒</string>
   <string name="torch_long_press_power_timeout_title">自动关闭手电筒</string>
+  <string name="torch_long_press_power_timeout_never">永不</string>
+  <string name="torch_long_press_power_timeout_1min">1 分钟</string>
+  <string name="torch_long_press_power_timeout_2min">2 分钟</string>
+  <string name="torch_long_press_power_timeout_5min">5 分钟</string>
+  <string name="torch_long_press_power_timeout_10min">10 分钟</string>
   <!-- Profiles -->
   <string name="profile_menu_delete_title">删除</string>
   <string name="profile_action_none">保持不变</string>
@@ -531,7 +540,7 @@
   <string name="touchscreen_gesture_one_finger_left_swipe_title">单指向左滑动</string>
   <string name="touchscreen_gesture_one_finger_right_swipe_title">单指向右滑动</string>
   <string name="touchscreen_gesture_up_arrow_title">绘制一个\"Λ\"</string>
-  <string name="touchscreen_gesture_down_arrow_title">绘制一个\"Λ\"</string>
+  <string name="touchscreen_gesture_down_arrow_title">绘制一个\"V\"</string>
   <string name="touchscreen_gesture_left_arrow_title">绘制一个\"&lt;\"</string>
   <string name="touchscreen_gesture_right_arrow_title">绘制一个\"&gt;\"</string>
   <string name="touchscreen_gesture_letter_c_title">绘制字母\"C\"</string>
@@ -539,6 +548,7 @@
   <string name="touchscreen_gesture_letter_o_title">绘制字母\"O\"</string>
   <string name="touchscreen_gesture_letter_m_title">绘制字母\"M\"</string>
   <string name="touchscreen_gesture_letter_s_title">绘制字母\"S\"</string>
+  <string name="touchscreen_gesture_letter_v_title">绘制字母\"V\"</string>
   <string name="touchscreen_gesture_letter_w_title">绘制字母\"W\"</string>
   <string name="touchscreen_gesture_letter_z_title">绘制字母\"Z\"</string>
   <string name="touchscreen_gesture_action_dialog_title">手势操作</string>

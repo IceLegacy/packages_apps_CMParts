@@ -50,6 +50,7 @@
   <string name="privacy_guard_help_title">Ayuda</string>
   <string name="privacy_guard_reset_text">¿Reafitar permisos?</string>
   <string name="privacy_guard_help_text">Nesta pantalla pues escoyer les aplicaciones que deberíen tener activu\'l Guardián de privacidá calcando nelles. Les aplicaciones esbillaes nun sedrán a acceder a los tos datos personales como contautos, mensaxes o rexistros de llamaes. Un primíu llargu nuna entrada, abre los detalles de l\'aplicación.\n\nLes aplicaciones integraes nun s\'amuesen por defeutu pero puen facelo conseñando la opción correspondiente nel menú.</string>
+  <string name="privacy_guard_manager_show_system_apps">Amosar aplicaciones integraes</string>
   <string name="privacy_guard_advanced_settings_title">Avanzao</string>
   <string name="privacy_guard_notification_title">Amosar avisu</string>
   <!-- Notification light dialogs -->
@@ -68,6 +69,7 @@
   <string name="battery_light_low_color_title">Batería baxa</string>
   <string name="battery_light_medium_color_title">Cargando</string>
   <!-- Lights settings screen, notification light settings -->
+  <string name="notification_light_title">Lluz d\'avisu</string>
   <string name="notification_light_general_title">Xeneral</string>
   <string name="notification_light_advanced_title">Avanzao</string>
   <string name="notification_light_applist_title">Aplicaciones</string>
@@ -89,6 +91,7 @@
   <string name="live_display_night">Nueche</string>
   <string name="live_display_outdoor_mode_summary">Aumenta automáticamente\'l brilléu y saturación so la lluz solar</string>
   <string name="live_display_enhance_color_title">Ameyorar colores</string>
+  <string name="live_display_color_profile_title">Pefil de color</string>
   <string name="live_display_color_profile_standard_title">Estándar</string>
   <string name="live_display_color_profile_natural_title">Natural</string>
   <string name="live_display_color_profile_cinema_title">Cine</string>
@@ -126,6 +129,7 @@
   <string name="hardware_keys_action_app_switch">Conmutador d\'aplicaciones recientes</string>
   <string name="hardware_keys_action_search">Asistente de gueta</string>
   <string name="hardware_keys_action_voice_search">Gueta per voz</string>
+  <string name="hardware_keys_action_in_app_search">Gueta na aplicación</string>
   <string name="hardware_keys_action_launch_camera">Llanzar cámara</string>
   <string name="hardware_keys_action_split_screen">Pantalla dixebrada</string>
   <string name="camera_launch_title">Llanzar cámara</string>
@@ -353,6 +357,7 @@
   <!-- Display : Rotation  -->
   <string name="display_rotation_title">Axustes de voltéu</string>
   <string name="display_rotation_unit">graos</string>
+  <string name="display_lockscreen_rotation_title">Voltiar pantalla de bloquéu</string>
   <string name="display_rotation_category_title">Moos de voltéu</string>
   <string name="display_rotation_0_title">0 graos</string>
   <string name="display_rotation_90_title">90 graos</string>

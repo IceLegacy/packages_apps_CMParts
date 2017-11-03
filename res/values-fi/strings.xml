@@ -139,6 +139,8 @@
   <string name="live_display_color_profile_reading_summary">Lämpimämpi värintoisto vähentämään silmien rasitusta</string>
   <string name="live_display_color_profile_srgb_title">sRGB</string>
   <string name="live_display_color_profile_srgb_summary">Värit tarkentuu sRGB-väritilaan</string>
+  <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
+  <string name="live_display_color_profile_dci_p3_summary">Värit tarkentuu DCI-P3-väritilaan</string>
   <string name="color_calibration_title">Värien kalibrointi</string>
   <string name="color_calibration_summary">Kalibroi näytön värit</string>
   <string name="color_red_title">Punainen</string>
@@ -238,6 +240,12 @@
   <string name="camera_double_tap_power_gesture_desc">Avaa kamera nopeasti avaamatta laitteen näyttöä</string>
   <string name="torch_long_press_power_gesture_title">Paina pitkään käynnistääksesi taskulampun</string>
   <string name="torch_long_press_power_gesture_desc">Aktivoi taskulamppu painamalla virtanäppäintä pitkään näytön ollessa pois päältä</string>
+  <string name="torch_long_press_power_timeout_title">Sulje taskulamppu automaattisesti</string>
+  <string name="torch_long_press_power_timeout_never">Ei koskaan</string>
+  <string name="torch_long_press_power_timeout_1min">1 minuutti</string>
+  <string name="torch_long_press_power_timeout_2min">2 minuuttia</string>
+  <string name="torch_long_press_power_timeout_5min">5 minuuttia</string>
+  <string name="torch_long_press_power_timeout_10min">10 minuuttia</string>
   <!-- Profiles -->
   <string name="profile_menu_delete_title">Poista</string>
   <string name="profile_action_none">Poistu tallentamatta</string>

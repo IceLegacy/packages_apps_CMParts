@@ -95,7 +95,7 @@
   <string name="notification_light_missed_call_title">不在着信</string>
   <string name="notification_light_voicemail_title">ボイスメール</string>
   <string name="notification_light_screen_on">画面点灯時も点灯</string>
-  <string name="notification_light_zen_mode">[通知を非表示]でも点灯</string>
+  <string name="notification_light_zen_mode">マナーモード時でも点灯</string>
   <string name="notification_light_use_multiple_leds">マルチLED</string>
   <string name="keywords_lights_brightness_level">暗く led 明るさ</string>
   <string name="notification_light_automagic">色を自動的に選択</string>
@@ -120,7 +120,7 @@
   <string name="live_display_enhance_color_summary">肌の色、風景や他の画像の色の鮮やかさを補正する</string>
   <string name="live_display_color_profile_title">カラープロファイル</string>
   <string name="live_display_color_profile_standard_title">標準</string>
-  <string name="live_display_color_profile_standard_summary">正確な色と明るい白</string>
+  <string name="live_display_color_profile_standard_summary">正確な色と明るい白に補正します</string>
   <string name="live_display_color_profile_natural_title">自然</string>
   <string name="live_display_color_profile_natural_summary">写実的な色と肌色</string>
   <string name="live_display_color_profile_dynamic_title">ダイナミック</string>
@@ -137,6 +137,10 @@
   <string name="live_display_color_profile_adaptive_summary">色を周囲の状況に適応する</string>
   <string name="live_display_color_profile_reading_title">読書</string>
   <string name="live_display_color_profile_reading_summary">目の負担を軽減するため暖かい色にします</string>
+  <string name="live_display_color_profile_srgb_title">sRGB</string>
+  <string name="live_display_color_profile_srgb_summary">正確な sRGB 色空間に補正します</string>
+  <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
+  <string name="live_display_color_profile_dci_p3_summary">正確な DCI-P3 色空間に補正します</string>
   <string name="color_calibration_title">色の調整</string>
   <string name="color_calibration_summary">画面の色を調整する</string>
   <string name="color_red_title">赤</string>
@@ -172,6 +176,8 @@
   <string name="hardware_keys_action_sleep">画面を消灯</string>
   <string name="hardware_keys_action_last_app">前回のアプリ</string>
   <string name="hardware_keys_action_split_screen">画面の分割</string>
+  <string name="hardware_keys_action_single_handed_left">片手モード（左）</string>
+  <string name="hardware_keys_action_single_handed_right">片手モード（右）</string>
   <string name="camera_sleep_on_release_title">画面の覗き見</string>
   <string name="camera_sleep_on_release_summary">ボタンを半押しし続けている間だけ画面を点灯する</string>
   <string name="camera_launch_title">カメラを起動</string>
@@ -219,7 +225,6 @@
   <string name="power_menu_title">電源メニュー</string>
   <string name="power_menu_reboot_title">再起動メニュー</string>
   <string name="power_menu_screenshot_title">スクリーンショット</string>
-  <string name="power_menu_screenrecord_title">スクリーンレコード</string>
   <string name="power_menu_airplane_title">機内モード</string>
   <string name="power_menu_users_title">ユーザーの切り替え</string>
   <string name="power_menu_settings_title">設定のショートカット</string>
@@ -230,12 +235,17 @@
   <string name="volume_keys_control_ring_stream_title">着信音量のコントロール</string>
   <string name="volume_keys_control_ring_stream_summary_on">音量キーで着信音量をコントロールする</string>
   <string name="volume_keys_control_ring_stream_summary_off">音量キーでメディア音量をコントロールする</string>
-  <string name="camera_double_tap_power_gesture_title">電源ボタンを2回押してカメラを起動</string>
+  <string name="camera_double_tap_power_gesture_title">ホームボタンを2回押してカメラを起動</string>
   <!-- Description of setting that controls gesture to open camera by double tapping the power button [CHAR LIMIT=NONE] -->
   <string name="camera_double_tap_power_gesture_desc">画面のロックを解除せずにカメラをすばやく起動する</string>
   <string name="torch_long_press_power_gesture_title">長押しでライト点灯</string>
   <string name="torch_long_press_power_gesture_desc">画面消灯時に電源ボタンを長押ししてライトを点灯します</string>
   <string name="torch_long_press_power_timeout_title">ライトを自動的にオフにする</string>
+  <string name="torch_long_press_power_timeout_never">無期限</string>
+  <string name="torch_long_press_power_timeout_1min">1分</string>
+  <string name="torch_long_press_power_timeout_2min">2分</string>
+  <string name="torch_long_press_power_timeout_5min">5分</string>
+  <string name="torch_long_press_power_timeout_10min">10分</string>
   <!-- Profiles -->
   <string name="profile_menu_delete_title">削除</string>
   <string name="profile_action_none">変更しない</string>
@@ -387,7 +397,10 @@
   <string name="status_bar_icons_title">ステータスバーのアイコン</string>
   <string name="status_bar_notif_count_title">通知の数を表示</string>
   <string name="status_bar_notif_count_summary">保留中の通知の数を表示する</string>
+  <string name="status_bar_system_icons_title">システムアイコン</string>
+  <string name="status_bar_system_icons_summary">ステータスバーに表示するアイコンを設定します</string>
   <!-- Status bar - Clock -->
+  <string name="status_bar_clock_title">時計</string>
   <string name="status_bar_clock_position_title">時計のスタイル</string>
   <string name="status_bar_clock_position_right">右</string>
   <string name="status_bar_clock_position_left">左</string>
@@ -398,6 +411,7 @@
   <string name="status_bar_am_pm_small">小さい</string>
   <string name="status_bar_am_pm_hidden">表示しない</string>
   <!-- Status bar - Battery -->
+  <string name="status_bar_battery_title">バッテリー残量表示</string>
   <string name="status_bar_battery_style_title">電池の状態のスタイル</string>
   <string name="status_bar_battery_style_icon_portrait">縦向きのアイコン</string>
   <string name="status_bar_battery_style_icon_landscape">横向きのアイコン</string>
@@ -508,9 +522,6 @@
   <string name="expanded_desktop_style_hide_navigation">ナビゲーションバーを非表示</string>
   <string name="expanded_desktop_style_hide_both">両方を非表示</string>
   <string name="expanded_desktop_nothing_to_show_text">拡張デスクトップをアプリごとにカスタマイズするにはスイッチをOFFにしてください</string>
-  <!-- Statusbar clock font style -->
-  <string name="clock_font_style_title">日付のフォント</string>
-  <string name="clock_font_size_title">日付のフォントサイズ</string>
   <!-- Sounds: Charging sounds -->
   <string name="charging_sounds_settings_title">充電時の音</string>
   <string name="charging_sounds_enabled_title">有効</string>
@@ -537,6 +548,7 @@
   <string name="touchscreen_gesture_letter_o_title">「O」を描く</string>
   <string name="touchscreen_gesture_letter_m_title">「M」を描く</string>
   <string name="touchscreen_gesture_letter_s_title">「S」を描く</string>
+  <string name="touchscreen_gesture_letter_v_title">「V」を描く</string>
   <string name="touchscreen_gesture_letter_w_title">「W」を描く</string>
   <string name="touchscreen_gesture_letter_z_title">「Z」を描く</string>
   <string name="touchscreen_gesture_action_dialog_title">ジェスチャーのアクション</string>

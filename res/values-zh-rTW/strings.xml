@@ -79,11 +79,11 @@
   <string name="pulse_speed_very_slow">非常低</string>
   <!-- Battery light settings -->
   <string name="battery_light_title">電量指示燈</string>
-  <string name="battery_low_pulse_title">低電量時閃爍呼吸燈</string>
+  <string name="battery_low_pulse_title">電量不足時閃爍呼吸燈</string>
   <string name="battery_light_list_title">顏色</string>
   <string name="battery_light_low_color_title">電量不足</string>
   <string name="battery_light_medium_color_title">充電中</string>
-  <string name="battery_light_full_color_title">電力充足</string>
+  <string name="battery_light_full_color_title">電量充足</string>
   <!-- Lights settings screen, notification light settings -->
   <string name="notification_light_title">通知指示燈</string>
   <string name="notification_light_general_title">一般</string>
@@ -137,6 +137,10 @@
   <string name="live_display_color_profile_adaptive_summary">自動按環境條件調整顏色</string>
   <string name="live_display_color_profile_reading_title">閱讀</string>
   <string name="live_display_color_profile_reading_summary">溫暖的色彩減少眼睛疲勞</string>
+  <string name="live_display_color_profile_srgb_title">sRGB</string>
+  <string name="live_display_color_profile_srgb_summary">顏色準確到 sRGB 色域</string>
+  <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
+  <string name="live_display_color_profile_dci_p3_summary">顏色準確到 DCI-P3 色域</string>
   <string name="color_calibration_title">顏色校準</string>
   <string name="color_calibration_summary">校準螢幕上的顏色</string>
   <string name="color_red_title">紅色</string>
@@ -237,6 +241,11 @@
   <string name="torch_long_press_power_gesture_title">長按開啟手電筒</string>
   <string name="torch_long_press_power_gesture_desc">當螢幕關閉時長按電源鍵啟動手電筒</string>
   <string name="torch_long_press_power_timeout_title">自動關閉手電筒</string>
+  <string name="torch_long_press_power_timeout_never">永不</string>
+  <string name="torch_long_press_power_timeout_1min">1 分鐘</string>
+  <string name="torch_long_press_power_timeout_2min">2 分鐘</string>
+  <string name="torch_long_press_power_timeout_5min">5 分鐘</string>
+  <string name="torch_long_press_power_timeout_10min">10 分鐘</string>
   <!-- Profiles -->
   <string name="profile_menu_delete_title">刪除</string>
   <string name="profile_action_none">保持不變</string>
@@ -282,13 +291,13 @@
   <string name="profile_populate_profile_from_state">使用目前的裝置設定新增設定檔？</string>
   <string name="profile_menu_fill_from_state">匯入目前裝置的設定</string>
   <string name="profile_remove_current_profile">無法刪除目前的設定檔</string>
-  <string name="profile_app_group_category_title">覆蓋通知</string>
+  <string name="profile_app_group_category_title">覆寫通知</string>
   <string name="profile_app_group_item_instructions">新增或移除群組</string>
-  <string name="profile_app_group_item_instructions_summary">新增或移除覆蓋通知應用程式到此設定檔</string>
+  <string name="profile_app_group_item_instructions_summary">新增或移除覆寫通知應用程式到此設定檔</string>
   <!-- Profile mode options. -->
   <string name="profile_entries_on">開</string>
   <string name="profile_entries_off">關</string>
-  <string name="profile_entries_no_override">不覆蓋</string>
+  <string name="profile_entries_no_override">不覆寫</string>
   <!-- Add Profile -->
   <string name="profile_name_title">名稱</string>
   <string name="new_profile_name">&lt;新設定檔&gt;</string>
@@ -308,10 +317,10 @@
   <string name="profile_networkmode_2g3g">2G/3G</string>
   <string name="profile_networkmode_2g3g4g">2G/3G/LTE</string>
   <!-- Profile Config screen PreferenceGroup titles -->
-  <string name="profile_volumeoverrides_title">音量覆蓋</string>
+  <string name="profile_volumeoverrides_title">音量覆寫</string>
   <string name="connection_state_enabled">啟用</string>
   <string name="volume_override_summary">設為「%1$s/%2$s」</string>
-  <string name="profile_volume_override_checkbox_label">覆蓋音量</string>
+  <string name="profile_volume_override_checkbox_label">覆寫音量</string>
   <!-- Menu item for managing profiles -->
   <string name="profile_profiles_manage">設定檔</string>
   <string name="profile_profile_manage">管理設定檔</string>
@@ -327,7 +336,7 @@
   <string name="ringer_mode">鈴響模式</string>
   <string name="lights_mode">指示燈模式</string>
   <string name="vibrate_mode">震動模式</string>
-  <string name="choose_soundtone">選取通知音效</string>
+  <string name="choose_soundtone">選擇通知音效</string>
   <string name="choose_ringtone">選擇鈴聲</string>
   <string name="ringtone_title">電話鈴聲</string>
   <!-- Sound settings screen, setting option name to pick ringtone (a list dialog comes up)-->
@@ -351,7 +360,7 @@
   <string name="profile_airplanemode_title">飛航模式</string>
   <string name="profile_brightness_title">螢幕亮度</string>
   <string name="profile_brightness_override_summary">設為「%1$d%%」</string>
-  <string name="profile_brightness_override_checkbox_label">強制亮度</string>
+  <string name="profile_brightness_override_checkbox_label">覆寫亮度</string>
   <!-- Connection override toggles (not all are used at this time ) -->
   <string name="toggleWifi">Wi\u2011Fi</string>
   <string name="toggleWifiAp">可攜式 Wi\u2011Fi 無線基地台</string>
@@ -448,7 +457,7 @@
   <string name="anonymous_statistics_warning_title">相關資訊</string>
   <string name="anonymous_statistics_warning">加入 LineageOS 統計將允許非個人資料被提交到 LineageOS 的開發人員，
         以追蹤每個裝置上的獨特安裝。提交的資訊包含一個唯一識別碼，此識別碼並不會泄露您的隱私或個人資料。
-        該資料在每次開機時被提交。\n\n輕觸預覽資料以預覽被提交資料的例子。</string>
+        該資料在每次開機時被提交。\n\n輕觸預覽資料以預覽被提交資料的範例。</string>
   <string name="enable_reporting_title">啟用報告</string>
   <string name="preview_data_title">預覽資料</string>
   <string name="view_stats_title">檢視統計</string>
@@ -497,7 +506,7 @@
   <string name="perf_profile_fail_toast">效能設定檔目前不可用</string>
   <string name="power_save_category_title">省電模式</string>
   <string name="power_save_title">極度省電</string>
-  <string name="power_save_summary">限制裝置效能和背景活動，即可節省電源</string>
+  <string name="power_save_summary">限制裝置效能和背景活動，即可省電</string>
   <string name="auto_power_save_title">自動省電</string>
   <string name="auto_power_save_summary_on">在 %s 電量時自動啟用省電模式</string>
   <string name="auto_power_save_summary_off">不要自動啟用省電模式</string>
@@ -540,6 +549,7 @@
   <string name="touchscreen_gesture_letter_o_title">畫出一個字母「O」</string>
   <string name="touchscreen_gesture_letter_m_title">畫出一個字母「M」</string>
   <string name="touchscreen_gesture_letter_s_title">畫出一個字母「S」</string>
+  <string name="touchscreen_gesture_letter_v_title">畫出一個字母「V」</string>
   <string name="touchscreen_gesture_letter_w_title">畫出一個字母「W」</string>
   <string name="touchscreen_gesture_letter_z_title">畫出一個字母「Z」</string>
   <string name="touchscreen_gesture_action_dialog_title">手勢動作</string>

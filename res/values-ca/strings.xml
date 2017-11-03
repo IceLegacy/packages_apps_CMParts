@@ -139,6 +139,8 @@
   <string name="live_display_color_profile_reading_summary">Colors càlids per cansar menys els ulls</string>
   <string name="live_display_color_profile_srgb_title">sRGB</string>
   <string name="live_display_color_profile_srgb_summary">Colors fidels a l\'espai de colors sRGB</string>
+  <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
+  <string name="live_display_color_profile_dci_p3_summary">Colors fidels a l\'espai de colors DCI-P3</string>
   <string name="color_calibration_title">Calibració de color</string>
   <string name="color_calibration_summary">Calibra els colors de la pantalla</string>
   <string name="color_red_title">Vermell</string>
@@ -207,8 +209,8 @@
   <string name="backlight_summary_enabled_with_timeout">Activada durant <xliff:g id="timeout">%s</xliff:g></string>
   <string name="backlight_summary_enabled">Activada</string>
   <!-- Buttons - Enable navbar -->
-  <string name="disable_navkeys_title">Habilita barra de navegació en pantalla</string>
-  <string name="disable_navkeys_summary">Habilita la barra de navegació en pantalla y deshabilitar els botons físics</string>
+  <string name="disable_navkeys_title">Habilita la barra de navegació en pantalla</string>
+  <string name="disable_navkeys_summary">Habilita la barra de navegació en pantalla i deshabilita els botons físics</string>
   <!-- Navigation Bar -->
   <string name="navigation_bar_category">Barra de navegació</string>
   <string name="navigation_bar_title">Botons i disposició</string>
@@ -239,6 +241,11 @@
   <string name="torch_long_press_power_gesture_title">Pulsació llarga per la torxa</string>
   <string name="torch_long_press_power_gesture_desc">Activa la torxa fent una pulsació llarga del botó d\'apagat mentre la pantalla està apagada</string>
   <string name="torch_long_press_power_timeout_title">Apaga la torxa automàticament</string>
+  <string name="torch_long_press_power_timeout_never">Mai</string>
+  <string name="torch_long_press_power_timeout_1min">1 minut</string>
+  <string name="torch_long_press_power_timeout_2min">2 minuts</string>
+  <string name="torch_long_press_power_timeout_5min">5 minuts</string>
+  <string name="torch_long_press_power_timeout_10min">10 minuts</string>
   <!-- Profiles -->
   <string name="profile_menu_delete_title">Esborra</string>
   <string name="profile_action_none">Deixa sense canvis</string>
@@ -300,7 +307,7 @@
   <string name="rename_dialog_hint">Introdueix el nom del perfil</string>
   <!-- Reset Profiles -->
   <string name="profile_reset_title">Restableix</string>
-  <string name="profile_reset_message">Vols esborrar tots els perfils creats per l\'usuari i els grups d\'aplicacions i restaurar-los als ajustaments predeterminats?</string>
+  <string name="profile_reset_message">Vols esborrar tots els perfils creats per l\'usuari i els grups d\'aplicacions i restaurar-los a la configuració per defecte?</string>
   <!-- Delete confimation messages -->
   <string name="profile_app_delete_confirm">Vols treure aquesta aplicació?</string>
   <!-- Profile network mode -->
@@ -541,6 +548,7 @@
   <string name="touchscreen_gesture_letter_o_title">Dibuixa la lletra \"O\"</string>
   <string name="touchscreen_gesture_letter_m_title">Dibuixa la lletra \"M\"</string>
   <string name="touchscreen_gesture_letter_s_title">Dibuixa la lletra \"S\"</string>
+  <string name="touchscreen_gesture_letter_v_title">Dibuixa la lletra \"V\"</string>
   <string name="touchscreen_gesture_letter_w_title">Dibuixa la lletra \"W\"</string>
   <string name="touchscreen_gesture_letter_z_title">Dibuixa la lletra \"Z\"</string>
   <string name="touchscreen_gesture_action_dialog_title">Acció gestual</string>

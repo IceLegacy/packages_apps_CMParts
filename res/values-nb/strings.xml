@@ -137,6 +137,10 @@
   <string name="live_display_color_profile_adaptive_summary">Farger tilpasser seg til omgivelsene</string>
   <string name="live_display_color_profile_reading_title">Leser</string>
   <string name="live_display_color_profile_reading_summary">Varmere farger for mindre belastning på øyene</string>
+  <string name="live_display_color_profile_srgb_title">sRGB</string>
+  <string name="live_display_color_profile_srgb_summary">Farger nøyaktige i forhold til fargerommet sRGB</string>
+  <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
+  <string name="live_display_color_profile_dci_p3_summary">Farger nøyaktige i forhold til fargerommet DCI-P3</string>
   <string name="color_calibration_title">Fargekalibrering</string>
   <string name="color_calibration_summary">Kalibrere skjermens farger</string>
   <string name="color_red_title">Rød</string>
@@ -237,6 +241,11 @@
   <string name="torch_long_press_power_gesture_title">Hold inne for lommelykt</string>
   <string name="torch_long_press_power_gesture_desc">Aktiver lommelykten ved å holde inne strøm-knappen mens skjermen er av</string>
   <string name="torch_long_press_power_timeout_title">Deaktiver lommelykten automatisk</string>
+  <string name="torch_long_press_power_timeout_never">Aldri</string>
+  <string name="torch_long_press_power_timeout_1min">1 minutt</string>
+  <string name="torch_long_press_power_timeout_2min">2 minutter</string>
+  <string name="torch_long_press_power_timeout_5min">5 minutter</string>
+  <string name="torch_long_press_power_timeout_10min">10 minutter</string>
   <!-- Profiles -->
   <string name="profile_menu_delete_title">Slett</string>
   <string name="profile_action_none">La stå uendret</string>
@@ -475,7 +484,7 @@
   <!-- Weather -->
   <string name="weather_settings_title">Vær</string>
   <string name="weather_settings_no_services_prompt">Ingen værleverandør tjeneste installert</string>
-  <string name="weather_settings_no_services_summary">Installer en værleverandør for å motta vær oppdateringer</string>
+  <string name="weather_settings_no_services_summary">Installer en værleverandør for å motta væroppdateringer</string>
   <string name="weather_settings_button">Leverandørinnstillinger</string>
   <string name="weather_settings_activity_not_found">Kan ikke starte innstillingsmenyen for denne leverandøren</string>
   <string name="weather_settings_add_weather_provider">Legg til værleverandør</string>
@@ -522,6 +531,7 @@
   <string name="charging_sounds_ringtone_silent">Lydløs</string>
   <!-- Gestures: Touchscreen gestures -->
   <string name="touchscreen_gesture_settings_title">Berøringsskjerm bevegelser</string>
+  <string name="touchscreen_gesture_settings_summary">Utfør forskjellige berøringsskjerm bevegelser for raske handlinger</string>
   <string name="touchscreen_gestures_haptic_feedback_title">Haptisk tilbakemelding</string>
   <string name="touchscreen_gestures_haptic_feedback_summary">Vibrer når en berøringsskjermsbevegelse oppdages</string>
   <string name="touchscreen_gesture_two_finger_down_swipe_title">Dra ned med to fingre</string>
@@ -541,6 +551,7 @@
   <string name="touchscreen_gesture_letter_v_title">Tegn bokstaven \"V\"</string>
   <string name="touchscreen_gesture_letter_w_title">Tegn bokstaven \"W\"</string>
   <string name="touchscreen_gesture_letter_z_title">Tegn bokstaven \"Z\"</string>
+  <string name="touchscreen_gesture_action_dialog_title">Bevegelses-handling</string>
   <string name="touchscreen_gesture_action_do_nothing">Ikke gjør noe</string>
   <string name="touchscreen_gesture_action_flashlight">Slå av/på lommelykten</string>
   <string name="touchscreen_gesture_action_camera">Åpne kameraet</string>

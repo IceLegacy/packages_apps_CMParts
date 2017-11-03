@@ -137,6 +137,10 @@
   <string name="live_display_color_profile_adaptive_summary">Přizpůsobit barvy okolním podmínkám</string>
   <string name="live_display_color_profile_reading_title">Čtení</string>
   <string name="live_display_color_profile_reading_summary">Teplejší barvy pro menší namáhání očí</string>
+  <string name="live_display_color_profile_srgb_title">sRGB</string>
+  <string name="live_display_color_profile_srgb_summary">Barvy s přesností na barevný prostor sRGB</string>
+  <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
+  <string name="live_display_color_profile_dci_p3_summary">Barvy s přesností na barevný prostor DCI-P3</string>
   <string name="color_calibration_title">Kalibrace barev</string>
   <string name="color_calibration_summary">Kalibrovat barvy obrazovky</string>
   <string name="color_red_title">Červená</string>
@@ -172,11 +176,14 @@
   <string name="hardware_keys_action_sleep">Vypnout obrazovku</string>
   <string name="hardware_keys_action_last_app">Poslední aplikace</string>
   <string name="hardware_keys_action_split_screen">Rozdělené zobrazení</string>
+  <string name="hardware_keys_action_single_handed_left">Režim jedné ruky (vlevo)</string>
+  <string name="hardware_keys_action_single_handed_right">Režim jedné ruky (vpravo)</string>
   <string name="camera_sleep_on_release_title">Náhled obrazovky</string>
   <string name="camera_sleep_on_release_summary">Polovičním stiskem tlačítka bude rozsvícena obrazovka pouze po dobu, po kterou je tlačítko stisknuté</string>
   <string name="camera_launch_title">Spuštění fotoaparátu</string>
   <string name="camera_launch_summary">Dlouhým stiskem bude spuštěn fotoaparát</string>
   <string name="volbtn_music_controls_title">Ovládání přehrávání</string>
+  <string name="volbtn_music_controls_summary">Při vypnuté obrazovce posouvat v hudebních stopách dlouhým stiskem tlačítek hlasitosti</string>
   <string name="volbtn_cursor_control_title">Ovládání kurzoru v textu</string>
   <string name="volbtn_cursor_control_off">Zakázáno</string>
   <string name="volbtn_cursor_control_on">Tlačítka hlasitosti nahoru/dolu posunou kurzor vlevo/vpravo</string>
@@ -234,6 +241,11 @@
   <string name="torch_long_press_power_gesture_title">Dlouhým stiskem zapnout svítilnu</string>
   <string name="torch_long_press_power_gesture_desc">Dlouhým stiskem tlačítka napájení při vypnuté obrazovce zapnout svítilnu</string>
   <string name="torch_long_press_power_timeout_title">Automatické vypnutí svítilny</string>
+  <string name="torch_long_press_power_timeout_never">Nikdy</string>
+  <string name="torch_long_press_power_timeout_1min">1 minuta</string>
+  <string name="torch_long_press_power_timeout_2min">2 minuty</string>
+  <string name="torch_long_press_power_timeout_5min">5 minut</string>
+  <string name="torch_long_press_power_timeout_10min">10 minut</string>
   <!-- Profiles -->
   <string name="profile_menu_delete_title">Smazat</string>
   <string name="profile_action_none">Ponechat nezměněné</string>
@@ -287,17 +299,58 @@
   <string name="profile_entries_off">Vypnuto</string>
   <string name="profile_entries_no_override">Neměnit</string>
   <!-- Add Profile -->
+  <string name="profile_name_title">Název</string>
+  <string name="new_profile_name">&lt;nový profil&gt;</string>
   <!-- Rename Dialog  -->
+  <string name="rename_dialog_title">Přejmenovat</string>
+  <string name="rename_dialog_message">Vložte nový název</string>
+  <string name="rename_dialog_hint">Zadejte název profilu</string>
   <!-- Reset Profiles -->
+  <string name="profile_reset_title">Obnovit</string>
+  <string name="profile_reset_message">Odstranit všechny uživatelem vytvořené profily a obnovit výchozí nastavení?</string>
   <!-- Delete confimation messages -->
+  <string name="profile_app_delete_confirm">Odebrat tuto aplikaci?</string>
   <!-- Profile network mode -->
+  <string name="profile_networkmode_2g">2G</string>
+  <string name="profile_networkmode_3g">3G</string>
+  <string name="profile_networkmode_4g">LTE</string>
+  <string name="profile_networkmode_2g3g">2G/3G</string>
+  <string name="profile_networkmode_2g3g4g">2G/3G/LTE</string>
   <!-- Profile Config screen PreferenceGroup titles -->
+  <string name="profile_volumeoverrides_title">Jiná hlasitost</string>
+  <string name="connection_state_enabled">Povolit</string>
+  <string name="volume_override_summary">Nastavit na %1$s/%2$s</string>
+  <string name="profile_volume_override_checkbox_label">Měnit hlasitost</string>
   <!-- Menu item for managing profiles -->
+  <string name="profile_profiles_manage">Profily</string>
+  <string name="profile_profile_manage">Upravit profil</string>
+  <string name="profile_appgroups_manage">Skupiny aplikací</string>
+  <string name="profile_appgroup_manage">Spravovat skupinu aplikací</string>
   <!-- Profile settings screen, section header for settings related to notification profiles -->
+  <string name="profile_settings">Nastavení profilu</string>
+  <string name="profile_trigger_connect">Při připojení</string>
+  <string name="profile_trigger_disconnect">Při odpojení</string>
+  <string name="profile_trigger_notrigger">Bez podmínky</string>
   <!-- Profile Settings sound modes labels -->
+  <string name="sound_mode">Režim upozornění</string>
+  <string name="ringer_mode">Režim vyzvánění</string>
+  <string name="lights_mode">Režim světelné signalizace</string>
+  <string name="vibrate_mode">Režim vibrací</string>
+  <string name="choose_soundtone">Zvolte tón upozornění</string>
+  <string name="choose_ringtone">Zvolte vyzváněcí melodii</string>
+  <string name="ringtone_title">Vyzvánění telefonu</string>
   <!-- Sound settings screen, setting option name to pick ringtone (a list dialog comes up)-->
+  <string name="soundtone_title">Zvuk upozornění</string>
   <!-- Title for application group setting screen -->
+  <string name="profile_appgroups_title">Skupiny aplikací</string>
+  <string name="profile_applist_title">Aplikace</string>
+  <string name="profile_new_appgroup">Nová skupina aplikací</string>
+  <string name="profile_delete_appgroup">Odstranit tuto skupinu aplikací?</string>
+  <string name="profile_appgroup_name_prompt">Zadejte název nové skupiny aplikací</string>
+  <string name="profile_appgroup_name_title">Název</string>
+  <string name="duplicate_appgroup_name">Duplicitní název skupiny!</string>
   <!-- Add application dialog box title -->
+  <string name="profile_choose_app">Zvolte aplikaci</string>
   <!-- Profiles - system settings -->
   <string name="profile_system_settings_title">Systémové nastavení</string>
   <string name="profile_lockmode_title">Režim zámku obrazovky</string>
@@ -344,7 +397,10 @@
   <string name="status_bar_icons_title">Ikony stavové lišty</string>
   <string name="status_bar_notif_count_title">Zobrazit počet upozornění</string>
   <string name="status_bar_notif_count_summary">Zobrazí počet nezobrazených upozornění v oznamovací oblasti</string>
+  <string name="status_bar_system_icons_title">Systémové ikony</string>
+  <string name="status_bar_system_icons_summary">Upravit zobrazení ikon na stavové liště</string>
   <!-- Status bar - Clock -->
+  <string name="status_bar_clock_title">Hodiny</string>
   <string name="status_bar_clock_position_title">Pozice hodin</string>
   <string name="status_bar_clock_position_right">Napravo</string>
   <string name="status_bar_clock_position_left">Nalevo</string>
@@ -355,6 +411,7 @@
   <string name="status_bar_am_pm_small">Malý</string>
   <string name="status_bar_am_pm_hidden">Skrytý</string>
   <!-- Status bar - Battery -->
+  <string name="status_bar_battery_title">Indikátor baterie</string>
   <string name="status_bar_battery_style_title">Indikátor stavu baterie</string>
   <string name="status_bar_battery_style_icon_portrait">Ikona na výšku</string>
   <string name="status_bar_battery_style_icon_landscape">Ikona na šířku</string>
@@ -447,7 +504,24 @@
   <string name="perf_profile_title">Profil výkonu: <xliff:g id="perf_profile_name">%1$s</xliff:g></string>
   <string name="perf_profile_fail_toast">Profil výkonu není momentálně k dispozici</string>
   <string name="power_save_category_title">Úspora baterie</string>
+  <string name="power_save_title">Extrémně úsporný </string>
+  <string name="power_save_summary">Omezit výkon a aktivity na pozadí pro úsporu energie</string>
+  <string name="auto_power_save_title">Automatický úsporný režim</string>
+  <string name="auto_power_save_summary_on">Automaticky zapnout úsporný režim při %s baterie</string>
+  <string name="auto_power_save_summary_off">Nezapínat automaticky režim snížené spotřeby</string>
+  <string name="app_perf_profiles_title">Automatická optimalizace</string>
+  <string name="app_perf_profiles_summary">Automaticky vybrat odpovídající výkonnostní profil pro různé aplikace</string>
+  <string name="auto_power_save_never">Nikdy</string>
   <!-- Applications: Expanded desktop -->
+  <string name="expanded_desktop_settings_title">Rozšířená plocha</string>
+  <string name="expanded_desktop_settings_summary">Rozšířit prostor na ploše skrytím stavového řádku, navigační lišty nebo obojí</string>
+  <string name="expanded_desktop_options_title">Možnost vlastního nastavení</string>
+  <string name="expanded_desktop_style_title">Vzhled rozšířené plochy</string>
+  <string name="expanded_desktop_style_hide_nothing">Nic neskrývat</string>
+  <string name="expanded_desktop_style_hide_status">Skrýt stavový řádek</string>
+  <string name="expanded_desktop_style_hide_navigation">Skrýt navigační panel</string>
+  <string name="expanded_desktop_style_hide_both">Skrýt oboji</string>
+  <string name="expanded_desktop_nothing_to_show_text">Vypněte upravení rozšířené plochy na základě aplikací</string>
   <!-- Sounds: Charging sounds -->
   <string name="charging_sounds_settings_title">Zvuk nabíječky</string>
   <string name="charging_sounds_enabled_title">Povolit</string>
@@ -456,4 +530,36 @@
   <string name="charging_sounds_ringtone_title">Zvuk upozornění</string>
   <string name="charging_sounds_ringtone_silent">Tichý</string>
   <!-- Gestures: Touchscreen gestures -->
+  <string name="touchscreen_gesture_settings_title">Gesta na obrazovce</string>
+  <string name="touchscreen_gesture_settings_summary">Možnost spustit rychlou akci pomocí různých gest na obrazovce</string>
+  <string name="touchscreen_gestures_haptic_feedback_title">Hmatová odezva</string>
+  <string name="touchscreen_gestures_haptic_feedback_summary">Vibrovat při detekci gesta na obrazovce</string>
+  <string name="touchscreen_gesture_two_finger_down_swipe_title">Přejetí dolů 2 prsty</string>
+  <string name="touchscreen_gesture_one_finger_up_swipe_title">Přejetí nahoru 1 prst</string>
+  <string name="touchscreen_gesture_one_finger_down_swipe_title">Přejetí dolů 1 prst</string>
+  <string name="touchscreen_gesture_one_finger_left_swipe_title">Přejetí vlevo 1 prst</string>
+  <string name="touchscreen_gesture_one_finger_right_swipe_title">Přejetí vpravo 1 prst</string>
+  <string name="touchscreen_gesture_up_arrow_title">Nakreslit „Λ“</string>
+  <string name="touchscreen_gesture_down_arrow_title">Nakreslit „V“</string>
+  <string name="touchscreen_gesture_left_arrow_title">Nakreslit „&lt;“</string>
+  <string name="touchscreen_gesture_right_arrow_title">Nakreslit „&gt;“</string>
+  <string name="touchscreen_gesture_letter_c_title">Nakreslit písmeno „C“</string>
+  <string name="touchscreen_gesture_letter_e_title">Nakreslit písmeno „e“</string>
+  <string name="touchscreen_gesture_letter_o_title">Nakreslit písmeno „O“</string>
+  <string name="touchscreen_gesture_letter_m_title">Nakreslit písmeno „M“</string>
+  <string name="touchscreen_gesture_letter_s_title">Nakreslit písmeno „S“</string>
+  <string name="touchscreen_gesture_letter_v_title">Nakreslit písmeno „V“</string>
+  <string name="touchscreen_gesture_letter_w_title">Nakreslit písmeno „W“</string>
+  <string name="touchscreen_gesture_letter_z_title">Nakreslit písmeno „Z“</string>
+  <string name="touchscreen_gesture_action_dialog_title">Akce gest</string>
+  <string name="touchscreen_gesture_action_do_nothing">Nedělat nic</string>
+  <string name="touchscreen_gesture_action_flashlight">Přepnout svítilnu</string>
+  <string name="touchscreen_gesture_action_camera">Spustit fotoaparát</string>
+  <string name="touchscreen_gesture_action_browser">Spustit prohlížeč internetu</string>
+  <string name="touchscreen_gesture_action_dialer">Spustit telefon</string>
+  <string name="touchscreen_gesture_action_email">Zobrazit e-maily</string>
+  <string name="touchscreen_gesture_action_messages">Zobrazit krátké zprávy</string>
+  <string name="touchscreen_gesture_action_play_pause_music">Přehrávat / pozastavit hudbu</string>
+  <string name="touchscreen_gesture_action_previous_track">Přejít na předchozí skladbu</string>
+  <string name="touchscreen_gesture_action_next_track">Přejít na další skladbu</string>
 </resources>

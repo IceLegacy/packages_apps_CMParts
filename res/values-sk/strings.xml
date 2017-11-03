@@ -137,6 +137,10 @@
   <string name="live_display_color_profile_adaptive_summary">Farby prispôsobiť podmienkam okolia</string>
   <string name="live_display_color_profile_reading_title">Čítanie</string>
   <string name="live_display_color_profile_reading_summary">Teplejšie farby pre menšie namáhanie očí</string>
+  <string name="live_display_color_profile_srgb_title">sRGB</string>
+  <string name="live_display_color_profile_srgb_summary">Farby sú identické s farebným priestorom sRGB</string>
+  <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
+  <string name="live_display_color_profile_dci_p3_summary">Farby sú identické s farebným priestorom DCI-P3</string>
   <string name="color_calibration_title">Kalibrácia farieb</string>
   <string name="color_calibration_summary">Kalibrovať farby na obrazovke</string>
   <string name="color_red_title">Červená</string>
@@ -172,6 +176,8 @@
   <string name="hardware_keys_action_sleep">Vypnúť obrazovku</string>
   <string name="hardware_keys_action_last_app">Posledná aplikácia</string>
   <string name="hardware_keys_action_split_screen">Rozdelená obrazovka</string>
+  <string name="hardware_keys_action_single_handed_left">Režim jednej ruky (vľavo)</string>
+  <string name="hardware_keys_action_single_handed_right">Režim jednej ruky (vpravo)</string>
   <string name="camera_sleep_on_release_title">Náhľad obrazovky</string>
   <string name="camera_sleep_on_release_summary">Polovičné stlačenie rozsvieti obrazovku iba vtedy, kým je tlačidlo držané</string>
   <string name="camera_launch_title">Spustiť fotoaparát</string>
@@ -235,6 +241,11 @@
   <string name="torch_long_press_power_gesture_title">Dlhé stlačenie zapne Baterku</string>
   <string name="torch_long_press_power_gesture_desc">Keď obrazovka je vypnutá, dlhé zatlačením tlačidla Napájanie zapne Baterku</string>
   <string name="torch_long_press_power_timeout_title">Automatické vypnutie baterky</string>
+  <string name="torch_long_press_power_timeout_never">Nikdy</string>
+  <string name="torch_long_press_power_timeout_1min">1 minúta</string>
+  <string name="torch_long_press_power_timeout_2min">2 minúty</string>
+  <string name="torch_long_press_power_timeout_5min">5 minút</string>
+  <string name="torch_long_press_power_timeout_10min">10 minút</string>
   <!-- Profiles -->
   <string name="profile_menu_delete_title">Odstrániť záložku</string>
   <string name="profile_action_none">Ponechať nezmenené</string>
@@ -386,7 +397,10 @@
   <string name="status_bar_icons_title">Ikony stavového riadku</string>
   <string name="status_bar_notif_count_title">Zobraziť počítadlo oznámení</string>
   <string name="status_bar_notif_count_summary">Zobraziť počet čakajúcich oznámení na ikone v stavovom riadku</string>
+  <string name="status_bar_system_icons_title">Systémové ikony</string>
+  <string name="status_bar_system_icons_summary">Upraviť zobrazenie ikon v stavovom riadku</string>
   <!-- Status bar - Clock -->
+  <string name="status_bar_clock_title">Hodiny</string>
   <string name="status_bar_clock_position_title">Umiestnenie hodín</string>
   <string name="status_bar_clock_position_right">Vpravo</string>
   <string name="status_bar_clock_position_left">Vľavo</string>
@@ -397,6 +411,7 @@
   <string name="status_bar_am_pm_small">Malý</string>
   <string name="status_bar_am_pm_hidden">Skryté</string>
   <!-- Status bar - Battery -->
+  <string name="status_bar_battery_title">Indikátor stavu batérie</string>
   <string name="status_bar_battery_style_title">Zobrazenie stavu batérie</string>
   <string name="status_bar_battery_style_icon_portrait">Ikona na výšku</string>
   <string name="status_bar_battery_style_icon_landscape">Ikona na šírku</string>
@@ -533,6 +548,7 @@
   <string name="touchscreen_gesture_letter_o_title">Nakreslite písmeno \"O\"</string>
   <string name="touchscreen_gesture_letter_m_title">Nakreslite písmeno \"M\"</string>
   <string name="touchscreen_gesture_letter_s_title">Nakreslite písmeno \"S\"</string>
+  <string name="touchscreen_gesture_letter_v_title">Nakreslite písmeno \"V\"</string>
   <string name="touchscreen_gesture_letter_w_title">Nakreslite písmeno \"W\"</string>
   <string name="touchscreen_gesture_letter_z_title">Nakreslite písmeno \"Z\"</string>
   <string name="touchscreen_gesture_action_dialog_title">Gestá</string>

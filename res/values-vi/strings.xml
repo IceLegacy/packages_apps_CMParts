@@ -137,6 +137,10 @@
   <string name="live_display_color_profile_adaptive_summary">Màu sắc thích ứng với điều kiện môi trường xung quanh</string>
   <string name="live_display_color_profile_reading_title">Đọc</string>
   <string name="live_display_color_profile_reading_summary">Các màu ấm hơn cho mỏi mắt ít hơn</string>
+  <string name="live_display_color_profile_srgb_title">sRGB</string>
+  <string name="live_display_color_profile_srgb_summary">Màu sắc chính xác cho không gian màu sRGB</string>
+  <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
+  <string name="live_display_color_profile_dci_p3_summary">Màu sắc chính xác cho khoảng cách màu DCI-P3</string>
   <string name="color_calibration_title">Hiệu chỉnh màu sắc</string>
   <string name="color_calibration_summary">Hiệu chỉnh màu sắc trên màn hình</string>
   <string name="color_red_title">Đỏ</string>
@@ -172,6 +176,8 @@
   <string name="hardware_keys_action_sleep">Tắt màn hình</string>
   <string name="hardware_keys_action_last_app">Ứng dụng cuối</string>
   <string name="hardware_keys_action_split_screen">Chia màn hình</string>
+  <string name="hardware_keys_action_single_handed_left">Chế độ một tay (trái)</string>
+  <string name="hardware_keys_action_single_handed_right">Chế độ một tay (phải)</string>
   <string name="camera_sleep_on_release_title">Liếc màn hình</string>
   <string name="camera_sleep_on_release_summary">Nhấn nửa chừng sẽ giữ màn hình bật trong khi còn giữ nút</string>
   <string name="camera_launch_title">Mở máy ảnh</string>
@@ -235,6 +241,11 @@
   <string name="torch_long_press_power_gesture_title">Nhấn giữ bật đèn pin</string>
   <string name="torch_long_press_power_gesture_desc">Bật đèn pin bằng cách nhấn giữ phím nguồn khi màn hình đang tắt</string>
   <string name="torch_long_press_power_timeout_title">Tự động tắt đèn pin</string>
+  <string name="torch_long_press_power_timeout_never">Không bao giờ</string>
+  <string name="torch_long_press_power_timeout_1min">1 phút</string>
+  <string name="torch_long_press_power_timeout_2min">2 phút</string>
+  <string name="torch_long_press_power_timeout_5min">5 phút</string>
+  <string name="torch_long_press_power_timeout_10min">10 phút</string>
   <!-- Profiles -->
   <string name="profile_menu_delete_title">Xóa</string>
   <string name="profile_action_none">Giữ nguyên</string>
@@ -386,7 +397,10 @@
   <string name="status_bar_icons_title">Biểu tượng thanh trạng thái</string>
   <string name="status_bar_notif_count_title">Hiện số lượng thông báo</string>
   <string name="status_bar_notif_count_summary">Màn hình hiển thị số lượng thông báo đang chờ</string>
+  <string name="status_bar_system_icons_title">Biểu tượng hệ thống</string>
+  <string name="status_bar_system_icons_summary">Kiểm soát các biểu tượng thanh trạng thái được hiển thị</string>
   <!-- Status bar - Clock -->
+  <string name="status_bar_clock_title">Đồng hồ</string>
   <string name="status_bar_clock_position_title">Vị trí đồng hồ</string>
   <string name="status_bar_clock_position_right">Phải</string>
   <string name="status_bar_clock_position_left">Trái</string>
@@ -397,6 +411,7 @@
   <string name="status_bar_am_pm_small">Nhỏ</string>
   <string name="status_bar_am_pm_hidden">Ẩn</string>
   <!-- Status bar - Battery -->
+  <string name="status_bar_battery_title">Chỉ báo pin</string>
   <string name="status_bar_battery_style_title">Kiểu trạng thái pin</string>
   <string name="status_bar_battery_style_icon_portrait">Biểu tượng đứng</string>
   <string name="status_bar_battery_style_icon_landscape">Biểu tượng ngang</string>
@@ -533,6 +548,7 @@
   <string name="touchscreen_gesture_letter_o_title">Vẽ chữ cái \"O\"</string>
   <string name="touchscreen_gesture_letter_m_title">Vẽ chữ cái \"M\"</string>
   <string name="touchscreen_gesture_letter_s_title">Vẽ chữ cái \"S\"</string>
+  <string name="touchscreen_gesture_letter_v_title">Vẽ chữ cái \"V\"</string>
   <string name="touchscreen_gesture_letter_w_title">Vẽ chữ cái \"W\"</string>
   <string name="touchscreen_gesture_letter_z_title">Vẽ chữ cái \"Z\"</string>
   <string name="touchscreen_gesture_action_dialog_title">Hành động cử chỉ</string>

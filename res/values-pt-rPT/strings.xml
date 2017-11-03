@@ -139,6 +139,8 @@
   <string name="live_display_color_profile_reading_summary">Cores mais quentes para reduzir a fadiga ocular</string>
   <string name="live_display_color_profile_srgb_title">sRGB</string>
   <string name="live_display_color_profile_srgb_summary">Cores precisas para o espaço de cor sRGB</string>
+  <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
+  <string name="live_display_color_profile_dci_p3_summary">Cores precisas para o espaço de cor DCI-P3</string>
   <string name="color_calibration_title">Calibração de cores</string>
   <string name="color_calibration_summary">Calibrar as cores do ecrã</string>
   <string name="color_red_title">Vermelho</string>
@@ -174,11 +176,14 @@
   <string name="hardware_keys_action_sleep">Desligar o ecrã</string>
   <string name="hardware_keys_action_last_app">Última aplicação</string>
   <string name="hardware_keys_action_split_screen">Dividir ecrã</string>
+  <string name="hardware_keys_action_single_handed_left">Modo de uma mão (esquerda)</string>
+  <string name="hardware_keys_action_single_handed_right">Modo de uma mão (direita)</string>
   <string name="camera_sleep_on_release_title">Apresentação rápida</string>
   <string name="camera_sleep_on_release_summary">Pressionar até metade irá manter o ecrã ligado apenas enquanto o botão estiver pressionado</string>
   <string name="camera_launch_title">Iniciar a câmara</string>
   <string name="camera_launch_summary">Pressionar algum tempo e depois soltar iniciará a câmara</string>
   <string name="volbtn_music_controls_title">Controlo de reprodução</string>
+  <string name="volbtn_music_controls_summary">Procurar músicas com uma pressão longa das teclas de volume, enquanto o ecrã estiver desligado</string>
   <string name="volbtn_cursor_control_title">Controlo do cursor de teclado</string>
   <string name="volbtn_cursor_control_off">Inativo</string>
   <string name="volbtn_cursor_control_on">Volume para cima/baixo move o cursor para a esquerda/direita</string>
@@ -186,7 +191,7 @@
   <string name="power_end_call_title">Termina chamada</string>
   <string name="power_end_call_summary">Termina a chamada atual, pressionando o botão ligar/desligar</string>
   <string name="swap_volume_buttons_title">Reorientar</string>
-  <string name="swap_volume_buttons_summary">Trocar os botões de volume quando o ecrã é rodado</string>
+  <string name="swap_volume_buttons_summary">Inverter os botões de volume quando o ecrã é rodado</string>
   <string name="button_wake_title">Acordar o dispositivo</string>
   <string name="volume_answer_call_title">Atender chamada</string>
   <string name="volume_answer_call_summary">Atender chamadas pressionando os botões de volume</string>
@@ -220,7 +225,7 @@
   <string name="power_menu_title">Menu ligar/desligar</string>
   <string name="power_menu_reboot_title">Menu de reinicialização</string>
   <string name="power_menu_screenshot_title">Capturar ecrã</string>
-  <string name="power_menu_airplane_title">Modo de voo</string>
+  <string name="power_menu_airplane_title">Modo de avião</string>
   <string name="power_menu_users_title">Mudar utilizador</string>
   <string name="power_menu_settings_title">Atalho das definições</string>
   <string name="power_menu_lockdown_title">Bloqueio do dispositivo</string>
@@ -302,7 +307,7 @@
   <string name="rename_dialog_hint">Introduza o nome do perfil</string>
   <!-- Reset Profiles -->
   <string name="profile_reset_title">Repor</string>
-  <string name="profile_reset_message">Eliminar todos os perfis e grupos de aplicações criados e restaurar para o padrão?</string>
+  <string name="profile_reset_message">Eliminar todos os perfis e grupos de aplicações criados e repor a predefinição?</string>
   <!-- Delete confimation messages -->
   <string name="profile_app_delete_confirm">Remover esta aplicação?</string>
   <!-- Profile network mode -->
@@ -352,7 +357,7 @@
   <string name="profile_lockmode_policy_disabled_summary">Esta opção de perfil está desativada pela política do administrador do dispositivo</string>
   <string name="profile_lockmode_insecure_summary">Não pedir a palavra-passe nem PIN</string>
   <string name="profile_lockmode_disabled_summary">Desativar o ecrã de bloqueio</string>
-  <string name="profile_airplanemode_title">Modo de voo</string>
+  <string name="profile_airplanemode_title">Modo de avião</string>
   <string name="profile_brightness_title">Brilho do ecrã</string>
   <string name="profile_brightness_override_summary">Definido para %1$d%%</string>
   <string name="profile_brightness_override_checkbox_label">Substituir brilho</string>
@@ -392,7 +397,10 @@
   <string name="status_bar_icons_title">Ícones da barra de estado</string>
   <string name="status_bar_notif_count_title">Mostrar contagem de notificações</string>
   <string name="status_bar_notif_count_summary">Mostrar o número de notificações pendentes</string>
+  <string name="status_bar_system_icons_title">Ícones do sistema</string>
+  <string name="status_bar_system_icons_summary">Controlar que ícones da barra de estado são mostrados</string>
   <!-- Status bar - Clock -->
+  <string name="status_bar_clock_title">Relógio</string>
   <string name="status_bar_clock_position_title">Posição do relógio</string>
   <string name="status_bar_clock_position_right">Direita</string>
   <string name="status_bar_clock_position_left">Esquerda</string>
@@ -403,6 +411,7 @@
   <string name="status_bar_am_pm_small">Pequeno</string>
   <string name="status_bar_am_pm_hidden">Oculto</string>
   <!-- Status bar - Battery -->
+  <string name="status_bar_battery_title">Indicador de bateria</string>
   <string name="status_bar_battery_style_title">Estilo do estado da bateria</string>
   <string name="status_bar_battery_style_icon_portrait">Ícone em modo retrato</string>
   <string name="status_bar_battery_style_icon_landscape">Ícone em modo paisagem</string>
@@ -539,6 +548,7 @@
   <string name="touchscreen_gesture_letter_o_title">Desenhar a letra \"O\"</string>
   <string name="touchscreen_gesture_letter_m_title">Desenhar a letra \"M\"</string>
   <string name="touchscreen_gesture_letter_s_title">Desenhar a letra \"S\"</string>
+  <string name="touchscreen_gesture_letter_v_title">Desenhar a letra \"V\"</string>
   <string name="touchscreen_gesture_letter_w_title">Desenhar a letra \"W\"</string>
   <string name="touchscreen_gesture_letter_z_title">Desenhar a letra \"Z\"</string>
   <string name="touchscreen_gesture_action_dialog_title">Ação do gesto</string>
