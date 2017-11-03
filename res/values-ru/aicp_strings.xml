@@ -12,15 +12,52 @@
   <string name="clock_font_thin">Тонкий</string>
   <string name="clock_font_thin_italic">Тонкий курсивный</string>
   <string name="clock_font_condensed">Сжатый</string>
+  <string name="clock_font_condensed_italic">Сжатый курсивный</string>
+  <string name="clock_font_condensed_light">Сжатый лёгкий</string>
+  <string name="clock_font_condensed_light_italic">Сжатый лёгкий курсивный</string>
+  <string name="clock_font_condensed_bold">Сжатый жирный</string>
+  <string name="clock_font_condensed_bold_italic">Сжатый жирный курсивный</string>
+  <string name="clock_font_medium">Средний</string>
+  <string name="clock_font_medium_italic">Средний курсивный</string>
+  <string name="clock_font_black">Чёрный</string>
+  <string name="clock_font_black_italic">Черный курсивный</string>
+  <string name="clock_font_dancingscript">Рукописный</string>
+  <string name="clock_font_dancingscript_bold">Рукописный жирный</string>
+  <string name="clock_font_comingsoon">ComingSoon</string>
+  <string name="clock_font_notoserif">NotoSerif обычный</string>
+  <string name="clock_font_notoserif_italic">NotoSerif курсивный</string>
+  <string name="clock_font_notoserif_bold">NotoSerif жирный</string>
+  <string name="clock_font_notoserif_bold_italic">NotoSerif жирный курсивный</string>
+  <string name="clock_font_size_title">Размер шрифта</string>
+  <string name="clock_font_size_4">4</string>
+  <string name="clock_font_size_5">5</string>
+  <string name="clock_font_size_6">6</string>
+  <string name="clock_font_size_7">7</string>
+  <string name="clock_font_size_8">8</string>
+  <string name="clock_font_size_9">9</string>
+  <string name="clock_font_size_10">10</string>
+  <string name="clock_font_size_11">11</string>
+  <string name="clock_font_size_12">12</string>
+  <string name="clock_font_size_13">13</string>
+  <string name="clock_font_size_14">14</string>
+  <string name="clock_font_size_15">15</string>
+  <string name="clock_font_size_16">16</string>
+  <string name="clock_font_size_17">17</string>
+  <string name="clock_font_size_18">18</string>
+  <string name="clock_font_size_19">19</string>
+  <string name="clock_font_size_20">20</string>
+  <string name="clock_font_size_21">21</string>
+  <string name="clock_font_size_22">22</string>
+  <string name="clock_font_size_23">23</string>
   <!--Status bar date -->
   <string name="status_bar_clock_category">Часы</string>
   <string name="status_bar_date_title">Дата</string>
   <string name="status_bar_date_none">Скрыта (по умолчанию)</string>
   <string name="status_bar_date_small">Мелкий шрифт</string>
-  <string name="status_bar_date_normal">Нормальный шрифт</string>
+  <string name="status_bar_date_normal">Обычный шрифт</string>
   <string name="status_bar_date_format_title">Формат даты</string>
   <string name="status_bar_date_style">Стиль даты</string>
-  <string name="status_bar_date_style_normal">Нормальный</string>
+  <string name="status_bar_date_style_normal">Обычный</string>
   <string name="status_bar_date_style_lowercase">Строчными буквами</string>
   <string name="status_bar_date_style_uppercase">Прописными буквами</string>
   <string name="status_bar_date_format_custom">Свой Java формат</string>
@@ -40,7 +77,7 @@
   <!-- Pa Battery -->
   <string name="status_bar_battery_style_solid">Сплошной</string>
   <!-- Aicp Battery -->
-  <string name="status_bar_battery_style_aicp">AICP</string>
+  <string name="status_bar_battery_style_aicp">Tha Battery</string>
   <!-- Power menu torch -->
   <string name="power_menu_torch_title">Фонарик</string>
   <!-- Power menu Screenrecord -->
