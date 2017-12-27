@@ -3,9 +3,25 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Statusbar clock font style -->
   <!--Status bar date -->
+  <string name="status_bar_date_small">Kecil</string>
+  <string name="status_bar_date_normal">Normal</string>
+  <string name="status_bar_date_format_title">Format tanggal</string>
+  <string name="status_bar_date_style">Gaya tanggal</string>
+  <string name="status_bar_date_style_normal">Normal</string>
+  <string name="status_bar_date_style_lowercase">Huruf kecil</string>
+  <string name="status_bar_date_style_uppercase">Huruf besar</string>
+  <string name="status_bar_date_string_edittext_title">Harus dalam format tanggal misalnya. MM/dd/yy</string>
+  <string name="status_bar_date_string_edittext_summary">Masukan teks</string>
   <!-- Date position -->
+  <string name="clock_date_position">Posisi tanggal</string>
+  <string name="clock_date_right">Di kanan jam</string>
+  <string name="clock_date_left">Di kiri jam</string>
+  <string name="menu_save">Simpan</string>
+  <string name="menu_cancel">Buang</string>
   <!-- Status bar - Battery charging color -->
+  <string name="battery_charging_color_title">Warna baterai saat pengisian</string>
   <!-- Status bar - Battery saver color -->
+  <string name="status_bar_battery_saver_color_title">Warna penghemat baterai</string>
   <!-- Pa Battery -->
   <!-- Aicp Battery -->
   <!-- Power menu torch -->
@@ -13,5 +29,8 @@
   <!-- On-The-Go -->
   <!-- Color Picker -->
   <!-- ANBI -->
+  <string name="anbi_summary">Mencegah interaksi dengan tombol navigasi saat layar disentuh</string>
   <!-- Pocket judge -->
+  <string name="pocket_judge_title">Deteksi saku</string>
+  <string name="pocket_judge_summary">Blokir masukan tombol dan layar saat perangkat berada dalam saku</string>
 </resources>
